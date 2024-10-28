@@ -1,0 +1,8 @@
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.csproj.AssemblyReference.cache
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.Form1.resources
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.csproj.GenerateResource.cache
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.GeneratedMSBuildEditorConfig.editorconfig
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.AssemblyInfoInputs.cache
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.AssemblyInfo.cs
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.csproj.CoreCompileInputs.cache
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\net8.0-windows\CpFerreteria.sourcelink.json

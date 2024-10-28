@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj": {}
+  },
+  "projects": {
+    "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj",
+        "projectName": "CadFerreteria",
+        "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj",
+        "projectName": "ClnFerreteria",
+        "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {
+              "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
+                "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    },
+    "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj",
+        "projectName": "CpFerreteria",
+        "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj",
+        "packagesPath": "C:\\Users\\ivan\\.nuget\\packages\\",
+        "outputPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
+                "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj"
+              },
+              "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj": {
+                "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

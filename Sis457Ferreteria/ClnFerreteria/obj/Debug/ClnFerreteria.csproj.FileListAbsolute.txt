@@ -1,0 +1,2 @@
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerreteria.csproj.AssemblyReference.cache
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerreteria.csproj.CoreCompileInputs.cache
