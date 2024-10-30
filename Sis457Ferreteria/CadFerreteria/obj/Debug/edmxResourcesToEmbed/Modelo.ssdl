@@ -6,6 +6,9 @@
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Cliente">
     <Key>
@@ -17,6 +20,9 @@
     <Property Name="primerApellido" Type="varchar" MaxLength="30" />
     <Property Name="segundoApellido" Type="varchar" MaxLength="30" />
     <Property Name="celular" Type="bigint" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Compra">
     <Key>
@@ -27,6 +33,9 @@
     <Property Name="idProveedor" Type="int" Nullable="false" />
     <Property Name="total" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="CompraDetalle">
     <Key>
@@ -38,6 +47,9 @@
     <Property Name="cantidad" Type="int" Nullable="false" />
     <Property Name="precioUnitario" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="subtotal" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Empleado">
     <Key>
@@ -51,6 +63,9 @@
     <Property Name="direccion" Type="varchar" MaxLength="250" Nullable="false" />
     <Property Name="celular" Type="bigint" Nullable="false" />
     <Property Name="cargo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Producto">
     <Key>
@@ -64,6 +79,9 @@
     <Property Name="precioVenta" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="stock" Type="int" Nullable="false" />
     <Property Name="idCategoria" Type="int" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Proveedor">
     <Key>
@@ -74,6 +92,9 @@
     <Property Name="razonSocial" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="direccion" Type="varchar" MaxLength="250" />
     <Property Name="telefono" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Usuario">
     <Key>
@@ -83,6 +104,9 @@
     <Property Name="idEmpleado" Type="int" Nullable="false" />
     <Property Name="usuario" Type="varchar" MaxLength="15" Nullable="false" />
     <Property Name="clave" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="Venta">
     <Key>
@@ -95,6 +119,9 @@
     <Property Name="montoPago" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="montoCambio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <EntityType Name="VentaDetalle">
     <Key>
@@ -107,6 +134,9 @@
     <Property Name="precioUnitario" Type="decimal" Precision="10" Scale="2" Nullable="false" />
     <Property Name="cantidad" Type="int" Nullable="false" />
     <Property Name="subtotal" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fechaRegistro" Type="datetime" Nullable="false" />
+    <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <Association Name="fk_Compra_Proveedor">
     <End Role="Proveedor" Type="Self.Proveedor" Multiplicity="1" />
@@ -228,6 +258,9 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="paProductoListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="parametro" Type="varchar" Mode="In" />
+  </Function>
   <EntityContainer Name="LabFerreteriaModelStoreContainer">
     <EntitySet Name="Categoria" EntityType="Self.Categoria" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />

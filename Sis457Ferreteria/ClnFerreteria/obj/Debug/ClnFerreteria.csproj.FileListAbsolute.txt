@@ -1,2 +1,15 @@
 D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerreteria.csproj.AssemblyReference.cache
 D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerreteria.csproj.CoreCompileInputs.cache
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\ClnFerreteria.dll.config
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\ClnFerreteria.dll
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\ClnFerreteria.pdb
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\CadFerreteria.dll
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.dll
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.SqlServer.dll
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\CadFerreteria.pdb
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\CadFerreteria.dll.config
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.xml
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.SqlServer.xml
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerre.36DAAECF.Up2Date
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerreteria.dll
+D:\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerreteria.pdb

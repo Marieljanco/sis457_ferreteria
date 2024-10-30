@@ -4,17 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="eb0aa964766b41ac8c31b43f739f8fb6" Name="Diagram1" ZoomLevel="34">
-        <EntityTypeShape EntityType="LabFerreteriaModel.Categoria" Width="1.5" PointX="6" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.Cliente" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.Compra" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.CompraDetalle" Width="1.5" PointX="10.5" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.Empleado" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.Producto" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.Proveedor" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.Usuario" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.Venta" Width="1.5" PointX="8.25" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabFerreteriaModel.VentaDetalle" Width="1.5" PointX="13.5" PointY="5" IsExpanded="true" />
+      <Diagram DiagramId="14fa56e0cb824ffabcea254436adcb4c" Name="Diagram1">
+        <EntityTypeShape EntityType="LabFerreteriaModel.Categoria" Width="1.5" PointX="6" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.Cliente" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.Compra" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.CompraDetalle" Width="1.5" PointX="10.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.Empleado" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.Producto" Width="1.5" PointX="8.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.Proveedor" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.Usuario" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.Venta" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LabFerreteriaModel.VentaDetalle" Width="1.5" PointX="13.5" PointY="4.5" IsExpanded="true" />
         <AssociationConnector Association="LabFerreteriaModel.fk_Producto_Categoria" ManuallyRouted="false" />
         <AssociationConnector Association="LabFerreteriaModel.fk_Venta_Cliente" ManuallyRouted="false" />
         <AssociationConnector Association="LabFerreteriaModel.fk_Compra_Proveedor" ManuallyRouted="false" />

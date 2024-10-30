@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CpFerreteria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc11af0801990ab04d60910e4f7e1c081a9246b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+301f0e0b72f718f44827d31c582ebeed9570a60d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CpFerreteria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CpFerreteria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
