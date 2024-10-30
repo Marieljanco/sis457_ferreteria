@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj": {}
+    "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj": {}
   },
   "projects": {
-    "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
+    "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj",
+        "projectUniqueName": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj",
         "projectName": "CadFerreteria",
-        "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj",
+        "projectPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}
@@ -19,16 +19,16 @@
         "net48": {}
       }
     },
-    "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj": {
+    "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj",
+        "projectUniqueName": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj",
         "projectName": "ClnFerreteria",
-        "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj",
+        "projectPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {
-              "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
-                "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj"
+              "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
+                "projectPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj"
               }
             }
           }
@@ -38,21 +38,17 @@
         "net48": {}
       }
     },
-    "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj": {
+    "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj",
+        "projectUniqueName": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj",
         "projectName": "CpFerreteria",
-        "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj",
-        "packagesPath": "C:\\Users\\ivan\\.nuget\\packages\\",
-        "outputPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\obj\\",
+        "projectPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\CpFerreteria.csproj",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ivan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,11 +63,11 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
-                "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj"
+              "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj": {
+                "projectPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CadFerreteria\\CadFerreteria.csproj"
               },
-              "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj": {
-                "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj"
+              "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj": {
+                "projectPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\ClnFerreteria.csproj"
               }
             }
           }
@@ -115,7 +111,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

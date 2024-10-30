@@ -213,7 +213,7 @@ INSERT INTO Proveedor(nit, razonSocial, direccion, telefono)
 VALUES(3233544859, 'TIGRE S.A.', 'Dirección: Parque Industrial Ramón D. Gutiérrez PI-22, Sta. Cruz', '69046448')
 
 INSERT INTO Empleado(cedulaIdentidad, nombres, primerApellido, segundoApellido, direccion, celular, cargo)
-VALUES('123456', 'Alex', 'Vera', 'Pinto', 'Calle X', 76862782, 'ADMINISTRADOR');
+VALUES('123456', 'Milena', 'Padilla', 'Mendez', 'Calle X', 76862782, 'ADMINISTRADOR');
 
 INSERT INTO Usuario(usuario, clave, idEmpleado)
 VALUES('fiona', 'i0hcoO/nssY6WOs9pOp5Xw==', 1);
@@ -236,3 +236,5 @@ VALUES('123459', 'Pablo', 'Gonzalez', 'Perez', 73457845);
 SELECT * FROM Producto WHERE estado<>-1;
 
 SELECT * FROM Usuario;
+SELECT * FROM Empleado;
+
