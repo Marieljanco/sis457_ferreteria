@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CpFerreteria
 {
-    public partial class FrmPrincipal : Form
+    public partial class FrmVenta : Form
     {
-        public FrmPrincipal()
+        public FrmVenta()
         {
             InitializeComponent();
         }

@@ -39,17 +39,19 @@
             this.btnCaProductos = new C1.Win.Ribbon.RibbonButton();
             this.btnCaProveedores = new C1.Win.Ribbon.RibbonButton();
             this.btnCaClientes = new C1.Win.Ribbon.RibbonButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ribbonTab2 = new C1.Win.Ribbon.RibbonTab();
             this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
             this.btnCjCompras = new C1.Win.Ribbon.RibbonButton();
             this.btnCjVentas = new C1.Win.Ribbon.RibbonButton();
+            this.btnCjArqueDiario = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTab3 = new C1.Win.Ribbon.RibbonTab();
-            this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonGroup4 = new C1.Win.Ribbon.RibbonGroup();
             this.btnAdEmpleados = new C1.Win.Ribbon.RibbonButton();
             this.btnAdRoles = new C1.Win.Ribbon.RibbonButton();
+            this.pctPrincipal = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
             // c1Ribbon1
@@ -99,40 +101,33 @@
             this.ribbonGroup1.Items.Add(this.btnCaProveedores);
             this.ribbonGroup1.Items.Add(this.btnCaClientes);
             this.ribbonGroup1.Name = "ribbonGroup1";
-            this.ribbonGroup1.Text = "Administración de Catálogos";
+            this.ribbonGroup1.Text = "Administraación de Catálogos";
             // 
             // btnCaProductos
             // 
             this.btnCaProductos.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCaProductos.IconSet.Add(new C1.Framework.C1BitmapIcon("Edit", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 78));
+            this.btnCaProductos.IconSet.Add(new C1.Framework.C1BitmapIcon("Repair", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 233));
             this.btnCaProductos.Name = "btnCaProductos";
-            this.btnCaProductos.Text = "Poductos";
+            this.btnCaProductos.Text = "Productos";
             // 
             // btnCaProveedores
             // 
             this.btnCaProveedores.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCaProveedores.IconSet.Add(new C1.Framework.C1BitmapIcon("User", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 331));
+            this.btnCaProveedores.IconSet.Add(new C1.Framework.C1BitmapIcon("Users", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 332));
             this.btnCaProveedores.Name = "btnCaProveedores";
             this.btnCaProveedores.Text = "Proveedores";
             // 
             // btnCaClientes
             // 
             this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon("Users", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 332));
+            this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon("User", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 331));
             this.btnCaClientes.Name = "btnCaClientes";
             this.btnCaClientes.Text = "Clientes";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, 167);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 284);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // ribbonTab2
             // 
             this.ribbonTab2.Groups.Add(this.ribbonGroup2);
+            this.ribbonTab2.Groups.Add(this.ribbonGroup3);
             this.ribbonTab2.Name = "ribbonTab2";
             this.ribbonTab2.Text = "Caja";
             // 
@@ -143,59 +138,79 @@
             this.ribbonGroup2.Name = "ribbonGroup2";
             this.ribbonGroup2.Text = "Gestión";
             // 
+            // ribbonGroup3
+            // 
+            this.ribbonGroup3.Items.Add(this.btnCjArqueDiario);
+            this.ribbonGroup3.Name = "ribbonGroup3";
+            this.ribbonGroup3.Text = "Arqueo Diaro";
+            // 
             // btnCjCompras
             // 
             this.btnCjCompras.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCjCompras.IconSet.Add(new C1.Framework.C1BitmapIcon("ReportDesign", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 236));
+            this.btnCjCompras.IconSet.Add(new C1.Framework.C1BitmapIcon("SignatureLine", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 287));
             this.btnCjCompras.Name = "btnCjCompras";
             this.btnCjCompras.Text = "Compras";
             // 
             // btnCjVentas
             // 
             this.btnCjVentas.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCjVentas.IconSet.Add(new C1.Framework.C1BitmapIcon("GanttResources", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 118));
+            this.btnCjVentas.IconSet.Add(new C1.Framework.C1BitmapIcon("AcceptChanges", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 0));
             this.btnCjVentas.Name = "btnCjVentas";
             this.btnCjVentas.Text = "Ventas";
             // 
+            // btnCjArqueDiario
+            // 
+            this.btnCjArqueDiario.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            this.btnCjArqueDiario.IconSet.Add(new C1.Framework.C1BitmapIcon("TableProperties", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 312));
+            this.btnCjArqueDiario.Name = "btnCjArqueDiario";
+            this.btnCjArqueDiario.Text = "Arqueo Diario";
+            // 
             // ribbonTab3
             // 
-            this.ribbonTab3.Groups.Add(this.ribbonGroup3);
+            this.ribbonTab3.Groups.Add(this.ribbonGroup4);
             this.ribbonTab3.Name = "ribbonTab3";
             this.ribbonTab3.Text = "Administración";
             // 
-            // ribbonGroup3
+            // ribbonGroup4
             // 
-            this.ribbonGroup3.Items.Add(this.btnAdEmpleados);
-            this.ribbonGroup3.Items.Add(this.btnAdRoles);
-            this.ribbonGroup3.Name = "ribbonGroup3";
-            this.ribbonGroup3.Text = "Gestión de la Configuración";
+            this.ribbonGroup4.Items.Add(this.btnAdEmpleados);
+            this.ribbonGroup4.Items.Add(this.btnAdRoles);
+            this.ribbonGroup4.Name = "ribbonGroup4";
+            this.ribbonGroup4.Text = "Gestión de Configuración";
             // 
             // btnAdEmpleados
             // 
             this.btnAdEmpleados.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
             this.btnAdEmpleados.IconSet.Add(new C1.Framework.C1BitmapIcon("CheckNames", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 35));
             this.btnAdEmpleados.Name = "btnAdEmpleados";
-            this.btnAdEmpleados.Text = "Empleado";
+            this.btnAdEmpleados.Text = "Empleados";
             // 
             // btnAdRoles
             // 
             this.btnAdRoles.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnAdRoles.IconSet.Add(new C1.Framework.C1BitmapIcon("EditComments", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 79));
+            this.btnAdRoles.IconSet.Add(new C1.Framework.C1BitmapIcon("ReportDesign", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 236));
             this.btnAdRoles.Name = "btnAdRoles";
             this.btnAdRoles.Text = "Roles";
+            // 
+            // pctPrincipal
+            // 
+            this.pctPrincipal.Location = new System.Drawing.Point(0, 167);
+            this.pctPrincipal.Name = "pctPrincipal";
+            this.pctPrincipal.Size = new System.Drawing.Size(516, 156);
+            this.pctPrincipal.TabIndex = 1;
+            this.pctPrincipal.TabStop = false;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pctPrincipal);
             this.Controls.Add(this.c1Ribbon1);
             this.Name = "FrmPrincipal";
-            this.Text = "::: Ferreteria - Principal :::";
-            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
+            this.Text = "::: Principal - Ferreteria :::";
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctPrincipal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,12 +231,14 @@
         private C1.Win.Ribbon.RibbonButton btnCaClientes;
         private C1.Win.Ribbon.RibbonTab ribbonTab2;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
         private C1.Win.Ribbon.RibbonButton btnCjCompras;
         private C1.Win.Ribbon.RibbonButton btnCjVentas;
+        private C1.Win.Ribbon.RibbonButton btnCjArqueDiario;
         private C1.Win.Ribbon.RibbonTab ribbonTab3;
-        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup4;
         private C1.Win.Ribbon.RibbonButton btnAdEmpleados;
         private C1.Win.Ribbon.RibbonButton btnAdRoles;
+        private System.Windows.Forms.PictureBox pctPrincipal;
     }
 }
