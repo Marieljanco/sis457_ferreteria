@@ -1,36 +1,33 @@
 ﻿using CadFerreteria;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClnFerreteria
+namespace ClnMinerva
 {
     public class UsuarioCln
     {
+        public static Usuario obtenerUno(int id)
+        {
+            using (var context = new LabFerreteriaEntities())
+            {
+                return context.Usuario
+                    .Include(e => e.Empleado)
+                    .Where(e => e.id == id)
+                    .FirstOrDefault();
+            }
+        }
+
         public static Usuario validar(string usuario, string clave)
         {
             using (var context = new LabFerreteriaEntities())
             {
-                var query = from u in context.Usuario
-                            join e in context.Empleado on u.idEmpleado equals e.id
-                            where u.usuario1 == usuario && u.clave == clave
-                            select new
-                            {
-                                Usuario = u,
-                                Cargo = e.cargo
-                            };
-
-                var result = query.FirstOrDefault();
-                if (result != null)
-                {
-                    result.Usuario.Cargo = result.Cargo;
-                    return result.Usuario;
-                }
-
-                return null;
+                return context.Usuario
+                    .Where(x => x.estado == 1 && x.usuario1 == usuario && x.clave == clave)
+                    .FirstOrDefault();
             }
         }
     }

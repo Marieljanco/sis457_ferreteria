@@ -44,20 +44,20 @@
             this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
             this.btnCjCompras = new C1.Win.Ribbon.RibbonButton();
             this.btnCjVentas = new C1.Win.Ribbon.RibbonButton();
-            this.btnCjArqueDiario = new C1.Win.Ribbon.RibbonButton();
+            this.btnCjArqueoDiario = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTab3 = new C1.Win.Ribbon.RibbonTab();
             this.ribbonGroup4 = new C1.Win.Ribbon.RibbonGroup();
-            this.btnAdEmpleados = new C1.Win.Ribbon.RibbonButton();
+            this.btnAdEmpleado = new C1.Win.Ribbon.RibbonButton();
             this.btnAdRoles = new C1.Win.Ribbon.RibbonButton();
-            this.pctPrincipal = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPrincipal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
+            //this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
@@ -101,26 +101,26 @@
             this.ribbonGroup1.Items.Add(this.btnCaProveedores);
             this.ribbonGroup1.Items.Add(this.btnCaClientes);
             this.ribbonGroup1.Name = "ribbonGroup1";
-            this.ribbonGroup1.Text = "Administraación de Catálogos";
+            this.ribbonGroup1.Text = "Administración de Catálogo";
             // 
             // btnCaProductos
             // 
-            this.btnCaProductos.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCaProductos.IconSet.Add(new C1.Framework.C1BitmapIcon("Repair", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 233));
+            //this.btnCaProductos.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnCaProductos.IconSet.Add(new C1.Framework.C1BitmapIcon("AccessBackEnd", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 1));
             this.btnCaProductos.Name = "btnCaProductos";
             this.btnCaProductos.Text = "Productos";
             // 
             // btnCaProveedores
             // 
-            this.btnCaProveedores.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCaProveedores.IconSet.Add(new C1.Framework.C1BitmapIcon("Users", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 332));
+            //this.btnCaProveedores.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnCaProveedores.IconSet.Add(new C1.Framework.C1BitmapIcon("Users", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 332));
             this.btnCaProveedores.Name = "btnCaProveedores";
             this.btnCaProveedores.Text = "Proveedores";
             // 
             // btnCaClientes
             // 
-            this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon("User", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 331));
+            //this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnCaClientes.IconSet.Add(new C1.Framework.C1BitmapIcon("Users", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 332));
             this.btnCaClientes.Name = "btnCaClientes";
             this.btnCaClientes.Text = "Clientes";
             // 
@@ -140,30 +140,30 @@
             // 
             // ribbonGroup3
             // 
-            this.ribbonGroup3.Items.Add(this.btnCjArqueDiario);
+            this.ribbonGroup3.Items.Add(this.btnCjArqueoDiario);
             this.ribbonGroup3.Name = "ribbonGroup3";
-            this.ribbonGroup3.Text = "Arqueo Diaro";
+            this.ribbonGroup3.Text = "Arqueo de Caja";
             // 
             // btnCjCompras
             // 
-            this.btnCjCompras.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCjCompras.IconSet.Add(new C1.Framework.C1BitmapIcon("SignatureLine", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 287));
+            //this.btnCjCompras.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnCjCompras.IconSet.Add(new C1.Framework.C1BitmapIcon("SmartArt", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 289));
             this.btnCjCompras.Name = "btnCjCompras";
             this.btnCjCompras.Text = "Compras";
             // 
             // btnCjVentas
             // 
-            this.btnCjVentas.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCjVentas.IconSet.Add(new C1.Framework.C1BitmapIcon("AcceptChanges", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 0));
+            //this.btnCjVentas.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnCjVentas.IconSet.Add(new C1.Framework.C1BitmapIcon("UpOneLevel", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 330));
             this.btnCjVentas.Name = "btnCjVentas";
             this.btnCjVentas.Text = "Ventas";
             // 
-            // btnCjArqueDiario
+            // btnCjArqueoDiario
             // 
-            this.btnCjArqueDiario.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnCjArqueDiario.IconSet.Add(new C1.Framework.C1BitmapIcon("TableProperties", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 312));
-            this.btnCjArqueDiario.Name = "btnCjArqueDiario";
-            this.btnCjArqueDiario.Text = "Arqueo Diario";
+            //this.btnCjArqueoDiario.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnCjArqueoDiario.IconSet.Add(new C1.Framework.C1BitmapIcon("DrawTable", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 77));
+            this.btnCjArqueoDiario.Name = "btnCjArqueoDiario";
+            this.btnCjArqueoDiario.Text = "Arqueo Diario";
             // 
             // ribbonTab3
             // 
@@ -173,44 +173,46 @@
             // 
             // ribbonGroup4
             // 
-            this.ribbonGroup4.Items.Add(this.btnAdEmpleados);
+            this.ribbonGroup4.Items.Add(this.btnAdEmpleado);
             this.ribbonGroup4.Items.Add(this.btnAdRoles);
             this.ribbonGroup4.Name = "ribbonGroup4";
-            this.ribbonGroup4.Text = "Gestión de Configuración";
+            this.ribbonGroup4.Text = "Gestión de la configuración";
             // 
-            // btnAdEmpleados
+            // btnAdEmpleado
             // 
-            this.btnAdEmpleados.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnAdEmpleados.IconSet.Add(new C1.Framework.C1BitmapIcon("CheckNames", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 35));
-            this.btnAdEmpleados.Name = "btnAdEmpleados";
-            this.btnAdEmpleados.Text = "Empleados";
+            //this.btnAdEmpleado.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnAdEmpleado.IconSet.Add(new C1.Framework.C1BitmapIcon("CheckNames", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 35));
+            this.btnAdEmpleado.Name = "btnAdEmpleado";
+            this.btnAdEmpleado.Text = "Empleados";
             // 
             // btnAdRoles
             // 
-            this.btnAdRoles.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
-            this.btnAdRoles.IconSet.Add(new C1.Framework.C1BitmapIcon("ReportDesign", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 236));
+            //this.btnAdRoles.IconSet.Add(new C1.Framework.C1BitmapIcon("DefaultImage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "DefaultImage", -1));
+            //this.btnAdRoles.IconSet.Add(new C1.Framework.C1BitmapIcon("SchContacts", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 249));
             this.btnAdRoles.Name = "btnAdRoles";
             this.btnAdRoles.Text = "Roles";
             // 
-            // pctPrincipal
+            // pictureBox1
             // 
-            this.pctPrincipal.Location = new System.Drawing.Point(0, 167);
-            this.pctPrincipal.Name = "pctPrincipal";
-            this.pctPrincipal.Size = new System.Drawing.Size(516, 156);
-            this.pctPrincipal.TabIndex = 1;
-            this.pctPrincipal.TabStop = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::CpFerreteria.Properties.Resources.principal;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 161);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 289);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pctPrincipal);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.c1Ribbon1);
             this.Name = "FrmPrincipal";
             this.Text = "::: Principal - Ferreteria :::";
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctPrincipal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,14 +233,14 @@
         private C1.Win.Ribbon.RibbonButton btnCaClientes;
         private C1.Win.Ribbon.RibbonTab ribbonTab2;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
-        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
         private C1.Win.Ribbon.RibbonButton btnCjCompras;
         private C1.Win.Ribbon.RibbonButton btnCjVentas;
-        private C1.Win.Ribbon.RibbonButton btnCjArqueDiario;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+        private C1.Win.Ribbon.RibbonButton btnCjArqueoDiario;
         private C1.Win.Ribbon.RibbonTab ribbonTab3;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup4;
-        private C1.Win.Ribbon.RibbonButton btnAdEmpleados;
+        private C1.Win.Ribbon.RibbonButton btnAdEmpleado;
         private C1.Win.Ribbon.RibbonButton btnAdRoles;
-        private System.Windows.Forms.PictureBox pctPrincipal;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
