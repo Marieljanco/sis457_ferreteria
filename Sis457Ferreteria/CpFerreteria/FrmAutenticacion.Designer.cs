@@ -68,6 +68,7 @@
 			// 
 			// pctLogo
 			// 
+			this.pctLogo.Image = global::CpFerreteria.Properties.Resources.securityferre;
 			this.pctLogo.Location = new System.Drawing.Point(87, 42);
 			this.pctLogo.Name = "pctLogo";
 			this.pctLogo.Size = new System.Drawing.Size(100, 113);
