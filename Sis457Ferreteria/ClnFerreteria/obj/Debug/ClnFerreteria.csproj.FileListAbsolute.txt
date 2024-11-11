@@ -32,3 +32,14 @@ D:\Proyecto 457\sis457_ferreteria - copia\Sis457Ferreteria\ClnFerreteria\bin\Deb
 D:\Proyecto 457\sis457_ferreteria - copia\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.xml
 D:\Proyecto 457\sis457_ferreteria - copia\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.SqlServer.xml
 D:\Proyecto 457\sis457_ferreteria - copia\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerre.36DAAECF.Up2Date
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\ClnFerreteria.dll.config
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\ClnFerreteria.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\ClnFerreteria.pdb
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\CadFerreteria.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\CadFerreteria.pdb
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\CadFerreteria.dll.config
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\ClnFerreteria\obj\Debug\ClnFerre.36DAAECF.Up2Date

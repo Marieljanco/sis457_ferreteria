@@ -1,4 +1,4 @@
-﻿using ClnMinerva;
+﻿using ClnFerreteria;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,7 +53,7 @@ namespace CpFerreteria
 					txtUsuario.Focus();
 					txtUsuario.SelectAll();
 					Visible = false;
-					//new FrmPrincipal(this).ShowDialog();
+					new FrmPrincipal(this).ShowDialog();
 				}
 				else MessageBox.Show("Usuario y/o contraseña incorrecto", "::: LARANA - Mensaje :::",
 					MessageBoxButtons.OK, MessageBoxIcon.Error);

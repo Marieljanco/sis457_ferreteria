@@ -1,5 +1,4 @@
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.csproj.AssemblyReference.cache
-D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.Form1.resources
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmAutenticacion.resources
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmVenta.resources
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmEmpleados.resources
@@ -9,7 +8,6 @@ D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerr
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.csproj.GenerateResource.cache
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.exe.licenses
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.csproj.CoreCompileInputs.cache
-D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmCompra.resources
 D:\Proyecto 457\sis457_ferreteria - copia\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.csproj.AssemblyReference.cache
 D:\Proyecto 457\sis457_ferreteria - copia\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.Form1.resources
 D:\Proyecto 457\sis457_ferreteria - copia\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmAutenticacion.resources
@@ -88,3 +86,31 @@ D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.csproj
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerret.A7FCED0A.Up2Date
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.exe
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.pdb
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\CpFerreteria.exe.config
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\CpFerreteria.exe
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\CpFerreteria.pdb
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.4.5.2.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.4.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.C1Command.4.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.C1Input.4.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.C1Ribbon.4.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.Ribbon.4.5.2.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\CadFerreteria.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\ClnFerreteria.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\EntityFramework.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\EntityFramework.SqlServer.dll
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\CadFerreteria.pdb
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\CadFerreteria.dll.config
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\ClnFerreteria.pdb
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\ClnFerreteria.dll.config
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.4.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.4.5.2.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.C1Command.4.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.C1Input.4.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.C1Ribbon.4.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.Ribbon.4.5.2.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\EntityFramework.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\EntityFramework.SqlServer.xml
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerret.A7FCED0A.Up2Date
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.exe
+D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.pdb
