@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|d:\\proyecto 457\\sis457_ferreteria\\sis457ferreteria\\cpferreteria\\frmventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|solutionrelative:cpferreteria\\frmventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|d:\\proyecto 457\\sis457_ferreteria\\sis457ferreteria\\cpferreteria\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|solutionrelative:cpferreteria\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|d:\\proyecto 457\\sis457_ferreteria\\sis457ferreteria\\cpferreteria\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|solutionrelative:cpferreteria\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|d:\\proyecto 457\\sis457_ferreteria\\sis457ferreteria\\cpferreteria\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\cpferreteria\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|solutionrelative:cpferreteria\\frmprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|d:\\proyecto 457\\sis457_ferreteria\\sis457ferreteria\\cpferreteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\cpferreteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|solutionrelative:cpferreteria\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,21 +27,15 @@
       "RelativeMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|solutionrelative:cpferreteria\\frmautenticacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|d:\\proyecto 457\\sis457_ferreteria\\sis457ferreteria\\cpferreteria\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\cpferreteria\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D375AC98-76FA-4442-B990-DF81AD5069FB}|CpFerreteria\\CpFerreteria.csproj|solutionrelative:cpferreteria\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Proyecto 457\\sis457_ferreteria\\LabFerreteria.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC1FC901-41A8-47EE-98CE-02FBEA86541A}|ClnFerreteria\\ClnFerreteria.csproj|d:\\proyecto 457\\sis457_ferreteria\\sis457ferreteria\\clnferreteria\\usuariocln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DC1FC901-41A8-47EE-98CE-02FBEA86541A}|ClnFerreteria\\ClnFerreteria.csproj|D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\clnferreteria\\usuariocln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DC1FC901-41A8-47EE-98CE-02FBEA86541A}|ClnFerreteria\\ClnFerreteria.csproj|solutionrelative:clnferreteria\\usuariocln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Proyecto 457\\sis457_ferreteria\\LabFerreteria.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Proyecto 457\\sis457_ferreteria\\LabFerreteria.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 193,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,7 +53,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmVenta.cs",
+              "RelativeDocumentMoniker": "CpFerreteria\\FrmVenta.cs",
+              "ToolTip": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpFerreteria\\FrmVenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:39:13.256Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FrmProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmProducto.cs",
+              "RelativeDocumentMoniker": "CpFerreteria\\FrmProducto.cs",
+              "ToolTip": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CpFerreteria\\FrmProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T21:46:13.808Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FrmPrincipal.Designer.cs",
               "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmPrincipal.Designer.cs",
               "RelativeDocumentMoniker": "CpFerreteria\\FrmPrincipal.Designer.cs",
@@ -59,23 +85,22 @@
               "RelativeToolTip": "CpFerreteria\\FrmPrincipal.Designer.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T20:38:36.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T20:38:36.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LabFerreteria.sql ",
+              "DocumentIndex": 7,
+              "Title": "LabFerreteria.sql",
               "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\LabFerreteria.sql",
               "RelativeDocumentMoniker": "..\\LabFerreteria.sql",
-              "ToolTip": "LabFerreteria.sql ",
+              "ToolTip": "D:\\Proyecto 457\\sis457_ferreteria\\LabFerreteria.sql",
+              "RelativeToolTip": "..\\LabFerreteria.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-11T20:27:43.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T20:27:43.187Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "UsuarioCln.cs",
               "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\ClnFerreteria\\UsuarioCln.cs",
               "RelativeDocumentMoniker": "ClnFerreteria\\UsuarioCln.cs",
@@ -83,12 +108,11 @@
               "RelativeToolTip": "ClnFerreteria\\UsuarioCln.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T20:03:38.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T20:03:38.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\Program.cs",
               "RelativeDocumentMoniker": "CpFerreteria\\Program.cs",
@@ -96,12 +120,11 @@
               "RelativeToolTip": "CpFerreteria\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:58:27.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T19:58:27.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FrmPrincipal.cs",
               "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "CpFerreteria\\FrmPrincipal.cs",
@@ -109,33 +132,31 @@
               "RelativeToolTip": "CpFerreteria\\FrmPrincipal.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:57:02.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T19:57:02.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FrmAutenticacion.cs",
               "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmAutenticacion.cs",
               "RelativeDocumentMoniker": "CpFerreteria\\FrmAutenticacion.cs",
               "ToolTip": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmAutenticacion.cs",
               "RelativeToolTip": "CpFerreteria\\FrmAutenticacion.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwEQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T05:28:38.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "FrmAutenticacion.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmAutenticacion.cs",
               "RelativeDocumentMoniker": "CpFerreteria\\FrmAutenticacion.cs",
               "ToolTip": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\CpFerreteria\\FrmAutenticacion.cs [Dise\u00F1o]",
               "RelativeToolTip": "CpFerreteria\\FrmAutenticacion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T05:27:43.279Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-11-11T05:27:43.279Z"
             }
           ]
         }
