@@ -113,3 +113,4 @@ D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerr
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.exe
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.pdb
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmVenta.resources
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmCliente.resources

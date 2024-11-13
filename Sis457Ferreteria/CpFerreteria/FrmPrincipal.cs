@@ -30,7 +30,11 @@ namespace CpFerreteria
         {
             new FrmProducto().ShowDialog();
         }
-        private void btnCjVentas_Click(object sender, EventArgs e)
+		private void btnCaClientes_Click(object sender, EventArgs e)
+		{
+			new FrmCliente().ShowDialog();
+		}
+		private void btnCjVentas_Click(object sender, EventArgs e)
         {
             new FrmVenta().ShowDialog();
         }

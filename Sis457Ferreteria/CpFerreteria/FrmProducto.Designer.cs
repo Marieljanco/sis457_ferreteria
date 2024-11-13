@@ -38,6 +38,8 @@
 			this.lblCategoria = new System.Windows.Forms.Label();
 			this.lblMarca = new System.Windows.Forms.Label();
 			this.txtMarca = new System.Windows.Forms.TextBox();
+			this.btnCancelar = new System.Windows.Forms.Button();
+			this.btnGuardar = new System.Windows.Forms.Button();
 			this.nudPrecioVenta = new System.Windows.Forms.NumericUpDown();
 			this.nudStock = new System.Windows.Forms.NumericUpDown();
 			this.lblPrecioVenta = new System.Windows.Forms.Label();
@@ -54,14 +56,12 @@
 			this.lblTitulo = new System.Windows.Forms.Label();
 			this.dgvLista = new System.Windows.Forms.DataGridView();
 			this.pnlAcciones = new System.Windows.Forms.Panel();
-			this.gbxLista = new System.Windows.Forms.GroupBox();
-			this.btnBuscar = new System.Windows.Forms.Button();
-			this.btnCancelar = new System.Windows.Forms.Button();
-			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnCerrar = new System.Windows.Forms.Button();
 			this.btnEliminar = new System.Windows.Forms.Button();
 			this.btnEditar = new System.Windows.Forms.Button();
 			this.btnNuevo = new System.Windows.Forms.Button();
+			this.gbxLista = new System.Windows.Forms.GroupBox();
+			this.btnBuscar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.erpStock)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpPrecioVenta)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).BeginInit();
@@ -155,6 +155,37 @@
 			this.txtMarca.Name = "txtMarca";
 			this.txtMarca.Size = new System.Drawing.Size(194, 20);
 			this.txtMarca.TabIndex = 12;
+			// 
+			// btnCancelar
+			// 
+			this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
+			this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCancelar.Image = global::CpFerreteria.Properties.Resources.cancelar;
+			this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnCancelar.Location = new System.Drawing.Point(707, 72);
+			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.Size = new System.Drawing.Size(108, 47);
+			this.btnCancelar.TabIndex = 11;
+			this.btnCancelar.Text = "Cancelar";
+			this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnCancelar.UseVisualStyleBackColor = false;
+			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+			// 
+			// btnGuardar
+			// 
+			this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
+			this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnGuardar.Image = global::CpFerreteria.Properties.Resources.saveferre;
+			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnGuardar.Location = new System.Drawing.Point(600, 72);
+			this.btnGuardar.Name = "btnGuardar";
+			this.btnGuardar.Size = new System.Drawing.Size(101, 47);
+			this.btnGuardar.TabIndex = 10;
+			this.btnGuardar.Text = "Guardar";
+			this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnGuardar.UseVisualStyleBackColor = false;
+			this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
 			// 
 			// nudPrecioVenta
 			// 
@@ -302,62 +333,6 @@
 			this.pnlAcciones.Size = new System.Drawing.Size(819, 43);
 			this.pnlAcciones.TabIndex = 12;
 			// 
-			// gbxLista
-			// 
-			this.gbxLista.Controls.Add(this.dgvLista);
-			this.gbxLista.Location = new System.Drawing.Point(15, 89);
-			this.gbxLista.Name = "gbxLista";
-			this.gbxLista.Size = new System.Drawing.Size(815, 162);
-			this.gbxLista.TabIndex = 11;
-			this.gbxLista.TabStop = false;
-			this.gbxLista.Text = "Lista de Productos";
-			// 
-			// btnBuscar
-			// 
-			this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
-			this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnBuscar.Image = global::CpFerreteria.Properties.Resources.searchferre;
-			this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnBuscar.Location = new System.Drawing.Point(742, 45);
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Size = new System.Drawing.Size(92, 39);
-			this.btnBuscar.TabIndex = 10;
-			this.btnBuscar.Text = "Buscar";
-			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnBuscar.UseVisualStyleBackColor = false;
-			this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-			// 
-			// btnCancelar
-			// 
-			this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
-			this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnCancelar.Image = global::CpFerreteria.Properties.Resources.cancelar;
-			this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnCancelar.Location = new System.Drawing.Point(707, 72);
-			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.Size = new System.Drawing.Size(108, 47);
-			this.btnCancelar.TabIndex = 11;
-			this.btnCancelar.Text = "Cancelar";
-			this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnCancelar.UseVisualStyleBackColor = false;
-			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-			// 
-			// btnGuardar
-			// 
-			this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
-			this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnGuardar.Image = global::CpFerreteria.Properties.Resources.saveferre;
-			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnGuardar.Location = new System.Drawing.Point(600, 72);
-			this.btnGuardar.Name = "btnGuardar";
-			this.btnGuardar.Size = new System.Drawing.Size(101, 47);
-			this.btnGuardar.TabIndex = 10;
-			this.btnGuardar.Text = "Guardar";
-			this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnGuardar.UseVisualStyleBackColor = false;
-			this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-			// 
 			// btnCerrar
 			// 
 			this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Default;
@@ -411,6 +386,31 @@
 			this.btnNuevo.UseVisualStyleBackColor = true;
 			this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
 			// 
+			// gbxLista
+			// 
+			this.gbxLista.Controls.Add(this.dgvLista);
+			this.gbxLista.Location = new System.Drawing.Point(15, 89);
+			this.gbxLista.Name = "gbxLista";
+			this.gbxLista.Size = new System.Drawing.Size(815, 162);
+			this.gbxLista.TabIndex = 11;
+			this.gbxLista.TabStop = false;
+			this.gbxLista.Text = "Lista de Productos";
+			// 
+			// btnBuscar
+			// 
+			this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
+			this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnBuscar.Image = global::CpFerreteria.Properties.Resources.searchferre;
+			this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnBuscar.Location = new System.Drawing.Point(742, 45);
+			this.btnBuscar.Name = "btnBuscar";
+			this.btnBuscar.Size = new System.Drawing.Size(92, 39);
+			this.btnBuscar.TabIndex = 10;
+			this.btnBuscar.Text = "Buscar";
+			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnBuscar.UseVisualStyleBackColor = false;
+			this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+			// 
 			// FrmProducto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -425,6 +425,7 @@
 			this.Controls.Add(this.pnlAcciones);
 			this.Controls.Add(this.gbxLista);
 			this.Name = "FrmProducto";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Producto";
 			this.Load += new System.EventHandler(this.FrmProducto_Load);
 			((System.ComponentModel.ISupportInitialize)(this.erpStock)).EndInit();

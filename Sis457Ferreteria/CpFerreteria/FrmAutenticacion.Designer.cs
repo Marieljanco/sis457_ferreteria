@@ -150,6 +150,7 @@
 			this.Controls.Add(this.lblUsuario);
 			this.Controls.Add(this.lblTitulo);
 			this.Name = "FrmAutenticacion";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Autenticacion";
 			((System.ComponentModel.ISupportInitialize)(this.erpUsuario)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpClave)).EndInit();
