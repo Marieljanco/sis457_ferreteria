@@ -152,7 +152,16 @@
     <None Include="Resources\principal.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\cancelar.png" />
+    <Content Include="Resources\cancelferre.png" />
+    <Content Include="Resources\close.png" />
+    <Content Include="Resources\deleteferre.png" />
+    <Content Include="Resources\editferre.png" />
     <Content Include="Resources\ferreteria.jpg" />
+    <Content Include="Resources\login_okferre.png" />
+    <Content Include="Resources\newferre.png" />
+    <Content Include="Resources\saveferre.png" />
+    <Content Include="Resources\searchferre.png" />
     <Content Include="Resources\securityferre.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

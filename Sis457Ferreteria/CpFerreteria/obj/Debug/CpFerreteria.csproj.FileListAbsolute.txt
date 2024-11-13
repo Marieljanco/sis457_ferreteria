@@ -73,9 +73,7 @@ D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\C1.Win.Ribbon.4.5.2
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\EntityFramework.xml
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\EntityFramework.SqlServer.xml
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.csproj.AssemblyReference.cache
-D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.Form1.resources
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmAutenticacion.resources
-D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmCompra.resources
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmEmpleados.resources
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmPrincipal.resources
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmProducto.resources
@@ -114,3 +112,4 @@ D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\bin\Debug\Entity
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerret.A7FCED0A.Up2Date
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.exe
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.pdb
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmVenta.resources

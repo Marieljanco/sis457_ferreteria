@@ -32,10 +32,7 @@
 			this.erpStock = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpPrecioVenta = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpCodigo = new System.Windows.Forms.ErrorProvider(this.components);
-			this.btnBuscar = new System.Windows.Forms.Button();
 			this.erpUnidadMedida = new System.Windows.Forms.ErrorProvider(this.components);
-			this.btnCancelar = new System.Windows.Forms.Button();
-			this.btnGuardar = new System.Windows.Forms.Button();
 			this.gbxDatos = new System.Windows.Forms.GroupBox();
 			this.cbxCategoria = new System.Windows.Forms.ComboBox();
 			this.lblCategoria = new System.Windows.Forms.Label();
@@ -51,17 +48,20 @@
 			this.lblUnidadMedida = new System.Windows.Forms.Label();
 			this.lblDescripcion = new System.Windows.Forms.Label();
 			this.lblCodigo = new System.Windows.Forms.Label();
-			this.btnNuevo = new System.Windows.Forms.Button();
 			this.erpDescripcion = new System.Windows.Forms.ErrorProvider(this.components);
 			this.txtParametro = new System.Windows.Forms.TextBox();
 			this.lblBusqueda = new System.Windows.Forms.Label();
 			this.lblTitulo = new System.Windows.Forms.Label();
-			this.btnEditar = new System.Windows.Forms.Button();
 			this.dgvLista = new System.Windows.Forms.DataGridView();
 			this.pnlAcciones = new System.Windows.Forms.Panel();
+			this.gbxLista = new System.Windows.Forms.GroupBox();
+			this.btnBuscar = new System.Windows.Forms.Button();
+			this.btnCancelar = new System.Windows.Forms.Button();
+			this.btnGuardar = new System.Windows.Forms.Button();
 			this.btnCerrar = new System.Windows.Forms.Button();
 			this.btnEliminar = new System.Windows.Forms.Button();
-			this.gbxLista = new System.Windows.Forms.GroupBox();
+			this.btnEditar = new System.Windows.Forms.Button();
+			this.btnNuevo = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.erpStock)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpPrecioVenta)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpCodigo)).BeginInit();
@@ -87,45 +87,9 @@
 			// 
 			this.erpCodigo.ContainerControl = this;
 			// 
-			// btnBuscar
-			// 
-			this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnBuscar.Location = new System.Drawing.Point(742, 45);
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Size = new System.Drawing.Size(92, 39);
-			this.btnBuscar.TabIndex = 10;
-			this.btnBuscar.Text = "Buscar";
-			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnBuscar.UseVisualStyleBackColor = true;
-			this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-			// 
 			// erpUnidadMedida
 			// 
 			this.erpUnidadMedida.ContainerControl = this;
-			// 
-			// btnCancelar
-			// 
-			this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnCancelar.Location = new System.Drawing.Point(707, 80);
-			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.Size = new System.Drawing.Size(108, 39);
-			this.btnCancelar.TabIndex = 11;
-			this.btnCancelar.Text = "Cancelar";
-			this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnCancelar.UseVisualStyleBackColor = true;
-			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-			// 
-			// btnGuardar
-			// 
-			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnGuardar.Location = new System.Drawing.Point(600, 80);
-			this.btnGuardar.Name = "btnGuardar";
-			this.btnGuardar.Size = new System.Drawing.Size(101, 39);
-			this.btnGuardar.TabIndex = 10;
-			this.btnGuardar.Text = "Guardar";
-			this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnGuardar.UseVisualStyleBackColor = true;
-			this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
 			// 
 			// gbxDatos
 			// 
@@ -280,18 +244,6 @@
 			this.lblCodigo.TabIndex = 0;
 			this.lblCodigo.Text = "Código:";
 			// 
-			// btnNuevo
-			// 
-			this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnNuevo.Location = new System.Drawing.Point(205, 2);
-			this.btnNuevo.Name = "btnNuevo";
-			this.btnNuevo.Size = new System.Drawing.Size(92, 39);
-			this.btnNuevo.TabIndex = 6;
-			this.btnNuevo.Text = "Nuevo";
-			this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnNuevo.UseVisualStyleBackColor = true;
-			this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-			// 
 			// erpDescripcion
 			// 
 			this.erpDescripcion.ContainerControl = this;
@@ -318,24 +270,13 @@
 			this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(127)))));
 			this.lblTitulo.Location = new System.Drawing.Point(10, 13);
 			this.lblTitulo.Name = "lblTitulo";
 			this.lblTitulo.Size = new System.Drawing.Size(820, 32);
 			this.lblTitulo.TabIndex = 7;
 			this.lblTitulo.Text = "Productos";
 			this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// btnEditar
-			// 
-			this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnEditar.Location = new System.Drawing.Point(303, 2);
-			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.Size = new System.Drawing.Size(88, 39);
-			this.btnEditar.TabIndex = 7;
-			this.btnEditar.Text = "Editar";
-			this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnEditar.UseVisualStyleBackColor = true;
-			this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
 			// 
 			// dgvLista
 			// 
@@ -361,8 +302,66 @@
 			this.pnlAcciones.Size = new System.Drawing.Size(819, 43);
 			this.pnlAcciones.TabIndex = 12;
 			// 
+			// gbxLista
+			// 
+			this.gbxLista.Controls.Add(this.dgvLista);
+			this.gbxLista.Location = new System.Drawing.Point(15, 89);
+			this.gbxLista.Name = "gbxLista";
+			this.gbxLista.Size = new System.Drawing.Size(815, 162);
+			this.gbxLista.TabIndex = 11;
+			this.gbxLista.TabStop = false;
+			this.gbxLista.Text = "Lista de Productos";
+			// 
+			// btnBuscar
+			// 
+			this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
+			this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnBuscar.Image = global::CpFerreteria.Properties.Resources.searchferre;
+			this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnBuscar.Location = new System.Drawing.Point(742, 45);
+			this.btnBuscar.Name = "btnBuscar";
+			this.btnBuscar.Size = new System.Drawing.Size(92, 39);
+			this.btnBuscar.TabIndex = 10;
+			this.btnBuscar.Text = "Buscar";
+			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnBuscar.UseVisualStyleBackColor = false;
+			this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+			// 
+			// btnCancelar
+			// 
+			this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
+			this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCancelar.Image = global::CpFerreteria.Properties.Resources.cancelar;
+			this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnCancelar.Location = new System.Drawing.Point(707, 72);
+			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.Size = new System.Drawing.Size(108, 47);
+			this.btnCancelar.TabIndex = 11;
+			this.btnCancelar.Text = "Cancelar";
+			this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnCancelar.UseVisualStyleBackColor = false;
+			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+			// 
+			// btnGuardar
+			// 
+			this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(165)))), ((int)(((byte)(79)))));
+			this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnGuardar.Image = global::CpFerreteria.Properties.Resources.saveferre;
+			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnGuardar.Location = new System.Drawing.Point(600, 72);
+			this.btnGuardar.Name = "btnGuardar";
+			this.btnGuardar.Size = new System.Drawing.Size(101, 47);
+			this.btnGuardar.TabIndex = 10;
+			this.btnGuardar.Text = "Guardar";
+			this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnGuardar.UseVisualStyleBackColor = false;
+			this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+			// 
 			// btnCerrar
 			// 
+			this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Default;
+			this.btnCerrar.Image = global::CpFerreteria.Properties.Resources.cancelferre;
 			this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnCerrar.Location = new System.Drawing.Point(501, 2);
 			this.btnCerrar.Name = "btnCerrar";
@@ -375,6 +374,7 @@
 			// 
 			// btnEliminar
 			// 
+			this.btnEliminar.Image = global::CpFerreteria.Properties.Resources.deleteferre;
 			this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnEliminar.Location = new System.Drawing.Point(397, 2);
 			this.btnEliminar.Name = "btnEliminar";
@@ -385,20 +385,37 @@
 			this.btnEliminar.UseVisualStyleBackColor = true;
 			this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
 			// 
-			// gbxLista
+			// btnEditar
 			// 
-			this.gbxLista.Controls.Add(this.dgvLista);
-			this.gbxLista.Location = new System.Drawing.Point(15, 89);
-			this.gbxLista.Name = "gbxLista";
-			this.gbxLista.Size = new System.Drawing.Size(815, 162);
-			this.gbxLista.TabIndex = 11;
-			this.gbxLista.TabStop = false;
-			this.gbxLista.Text = "Lista de Productos";
+			this.btnEditar.Image = global::CpFerreteria.Properties.Resources.editferre;
+			this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnEditar.Location = new System.Drawing.Point(303, 2);
+			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.Size = new System.Drawing.Size(88, 39);
+			this.btnEditar.TabIndex = 7;
+			this.btnEditar.Text = "Editar";
+			this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnEditar.UseVisualStyleBackColor = true;
+			this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+			// 
+			// btnNuevo
+			// 
+			this.btnNuevo.Image = global::CpFerreteria.Properties.Resources.newferre;
+			this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnNuevo.Location = new System.Drawing.Point(205, 2);
+			this.btnNuevo.Name = "btnNuevo";
+			this.btnNuevo.Size = new System.Drawing.Size(92, 39);
+			this.btnNuevo.TabIndex = 6;
+			this.btnNuevo.Text = "Nuevo";
+			this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnNuevo.UseVisualStyleBackColor = true;
+			this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
 			// 
 			// FrmProducto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.WhiteSmoke;
 			this.ClientSize = new System.Drawing.Size(844, 442);
 			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.gbxDatos);
@@ -408,7 +425,7 @@
 			this.Controls.Add(this.pnlAcciones);
 			this.Controls.Add(this.gbxLista);
 			this.Name = "FrmProducto";
-			this.Text = "FrmProducto";
+			this.Text = "Producto";
 			this.Load += new System.EventHandler(this.FrmProducto_Load);
 			((System.ComponentModel.ISupportInitialize)(this.erpStock)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.erpPrecioVenta)).EndInit();

@@ -16,8 +16,5 @@ namespace CpFerreteria
         {
             InitializeComponent();
         }
-
-
-
-    }
+	}
 }

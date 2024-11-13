@@ -17,6 +17,7 @@ namespace CpFerreteria
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new FrmAutenticacion());
+			//Application.Run(new FrmProducto());
 		}
 	}
 }
