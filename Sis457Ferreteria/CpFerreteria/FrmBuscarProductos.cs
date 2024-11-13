@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace CpFerreteria
 {
-    public partial class FrmVenta : Form
+    public partial class FrmBuscarProductos : Form
     {
-        public FrmVenta()
+        public FrmBuscarProductos()
         {
             InitializeComponent();
-        }
-        private void FrmVenta_Load(object sender, EventArgs e)
-        {
-            dtpFecha.Value = DateTime.Now;
         }
     }
 }
