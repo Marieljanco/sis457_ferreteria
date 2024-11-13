@@ -61,9 +61,10 @@
 			this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
 			this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
 			this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
+			this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.c1Ribbon1.Name = "c1Ribbon1";
 			this.c1Ribbon1.QatHolder = this.ribbonQat1;
-			this.c1Ribbon1.Size = new System.Drawing.Size(800, 161);
+			this.c1Ribbon1.Size = new System.Drawing.Size(1067, 201);
 			this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
 			this.c1Ribbon1.Tabs.Add(this.ribbonTab2);
 			this.c1Ribbon1.Tabs.Add(this.ribbonTab3);
@@ -183,19 +184,21 @@
 			// 
 			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.pictureBox1.Image = global::CpFerreteria.Properties.Resources.principal;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 161);
+			this.pictureBox1.Location = new System.Drawing.Point(0, 201);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(800, 289);
+			this.pictureBox1.Size = new System.Drawing.Size(1067, 353);
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
 			// 
 			// FrmPrincipal
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(1067, 554);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.c1Ribbon1);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "FrmPrincipal";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "::: Principal - Ferreteria :::";
