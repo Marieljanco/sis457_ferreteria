@@ -38,5 +38,5 @@ namespace CpFerreteria
         {
             new FrmVenta().ShowDialog();
         }
-    }
+	}
 }

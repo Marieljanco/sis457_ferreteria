@@ -332,6 +332,9 @@
     <FunctionImport Name="paProductoListar" ReturnType="Collection(LabFerreteriaModel.paProductoListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="paClienteListar" ReturnType="Collection(LabFerreteriaModel.paClienteListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="paProductoListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
@@ -342,6 +345,17 @@
     <Property Type="Decimal" Name="precioVenta" Nullable="false" Precision="10" Scale="2" />
     <Property Type="Int32" Name="stock" Nullable="false" />
     <Property Type="Int32" Name="idCategoria" Nullable="false" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paClienteListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="nombres" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="primerApellido" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="segundoApellido" Nullable="true" MaxLength="30" />
+    <Property Type="Int64" Name="celular" Nullable="false" />
     <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
     <Property Type="Int16" Name="estado" Nullable="false" />

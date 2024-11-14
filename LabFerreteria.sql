@@ -183,6 +183,19 @@ AS
   SELECT * FROM Producto
   WHERE estado<>-1 AND descripcion LIKE '%'+REPLACE(@parametro,' ','%')+'%'; 
 
+-- cliente procedimiento no ejecutado revisar
+DROP PROC paClienteListar;
+GO
+create PROCEDURE paClienteListar @parametro VARCHAR(50)
+AS
+BEGIN
+    SELECT *
+    FROM Cliente
+    WHERE estado <> -1 AND nombres LIKE '%' + REPLACE(@parametro,' ','%')+'%';
+  END
+
+EXEC paClienteListar 'paco';
+-- fin proc cliente
 
 -- DML
 INSERT INTO Categoria(nombre)
@@ -237,4 +250,5 @@ SELECT * FROM Producto WHERE estado<>-1;
 
 SELECT * FROM Usuario;
 SELECT * FROM Empleado;
+SELECT * FROM Cliente;
 

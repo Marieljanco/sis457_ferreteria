@@ -67,6 +67,18 @@ public partial class LabFerreteriaEntities : DbContext
         return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paProductoListar_Result>("paProductoListar", parametroParameter);
     }
 
+
+    public virtual ObjectResult<paClienteListar_Result> paClienteListar(string parametro)
+    {
+
+        var parametroParameter = parametro != null ?
+            new ObjectParameter("parametro", parametro) :
+            new ObjectParameter("parametro", typeof(string));
+
+
+        return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<paClienteListar_Result>("paClienteListar", parametroParameter);
+    }
+
 }
 
 }

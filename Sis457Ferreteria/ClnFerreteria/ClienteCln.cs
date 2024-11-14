@@ -58,14 +58,13 @@ namespace ClnFerreteria
 				return context.Cliente.Where(x => x.estado != -1).ToList();
 			}
 		}
-
-		//public static List<paClienteListar_Result> listarPa(string parametro)
-		//{
-		//	using (var context = new LabFerreteriaEntities())
-		//	{
-		//		return context.paClienteListar(parametro).ToList();
-		//	}
-		//}
+		public static List<paClienteListar_Result> listarPa(string parametro)
+		{
+			using (var context = new LabFerreteriaEntities())
+			{
+				return context.paClienteListar(parametro).ToList();
+			}
+		}
 
 	}
 }

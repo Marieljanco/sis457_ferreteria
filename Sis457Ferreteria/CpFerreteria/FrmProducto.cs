@@ -188,7 +188,5 @@ namespace CpFerreteria
 					MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 		}
-
-
 	}
 }
