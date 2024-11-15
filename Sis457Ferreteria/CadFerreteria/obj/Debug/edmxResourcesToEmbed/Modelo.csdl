@@ -329,13 +329,44 @@
       <End Role="Venta" EntitySet="Venta" />
       <End Role="VentaDetalle" EntitySet="VentaDetalle" />
     </AssociationSet>
-    <FunctionImport Name="paProductoListar" ReturnType="Collection(LabFerreteriaModel.paProductoListar_Result)">
-      <Parameter Name="parametro" Mode="In" Type="String" />
-    </FunctionImport>
     <FunctionImport Name="paClienteListar" ReturnType="Collection(LabFerreteriaModel.paClienteListar_Result)">
       <Parameter Name="parametro" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="paEmpleadoListar" ReturnType="Collection(LabFerreteriaModel.paEmpleadoListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paProductoListar" ReturnType="Collection(LabFerreteriaModel.paProductoListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paVentaListar" ReturnType="Collection(LabFerreteriaModel.paVentaListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
+  <ComplexType Name="paClienteListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="nombres" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="primerApellido" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="segundoApellido" Nullable="true" MaxLength="30" />
+    <Property Type="Int64" Name="celular" Nullable="false" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int16" Name="estado" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paEmpleadoListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="12" />
+    <Property Type="String" Name="nombres" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="primerApellido" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="segundoApellido" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="direccion" Nullable="false" MaxLength="250" />
+    <Property Type="Int64" Name="celular" Nullable="false" />
+    <Property Type="String" Name="cargo" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="idUsuario" Nullable="false" />
+    <Property Type="String" Name="usuario" Nullable="false" MaxLength="15" />
+  </ComplexType>
   <ComplexType Name="paProductoListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
     <Property Type="String" Name="codigo" Nullable="false" MaxLength="20" />
@@ -349,15 +380,15 @@
     <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
     <Property Type="Int16" Name="estado" Nullable="false" />
   </ComplexType>
-  <ComplexType Name="paClienteListar_Result">
+  <ComplexType Name="paVentaListar_Result">
     <Property Type="Int32" Name="id" Nullable="false" />
-    <Property Type="String" Name="cedulaIdentidad" Nullable="false" MaxLength="12" />
-    <Property Type="String" Name="nombres" Nullable="false" MaxLength="30" />
-    <Property Type="String" Name="primerApellido" Nullable="true" MaxLength="30" />
-    <Property Type="String" Name="segundoApellido" Nullable="true" MaxLength="30" />
-    <Property Type="Int64" Name="celular" Nullable="false" />
-    <Property Type="String" Name="usuarioRegistro" Nullable="false" MaxLength="50" />
-    <Property Type="DateTime" Name="fechaRegistro" Nullable="false" Precision="23" />
-    <Property Type="Int16" Name="estado" Nullable="false" />
+    <Property Type="Int32" Name="idUsuario" Nullable="false" />
+    <Property Type="Int32" Name="idCliente" Nullable="false" />
+    <Property Type="Decimal" Name="total" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="montoPago" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="montoCambio" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="DateTime" Name="fecha" Nullable="false" />
+    <Property Type="String" Name="usuario" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="cliente" Nullable="false" MaxLength="92" />
   </ComplexType>
 </Schema>

@@ -199,6 +199,35 @@ EXEC paProductoListar 'tubo';
 EXEC paEmpleadoListar 'abril';
 EXEC paEmpleadoListar 'eli';
 
+GO
+CREATE PROCEDURE paVentaListar @parametro VARCHAR(50)
+AS
+BEGIN
+  SELECT 
+    v.id,
+    v.idUsuario,
+    v.idCliente,
+    v.total,
+    v.montoPago,
+    v.montoCambio,
+    ISNULL(v.fecha, GETDATE()) AS fecha,
+    ISNULL(u.usuario, '') AS usuario,
+    ISNULL(c.nombres, '') + ' ' + ISNULL(c.primerApellido, '') + ' ' + ISNULL(c.segundoApellido, '') AS cliente
+  FROM Venta v
+  LEFT JOIN Usuario u ON v.idUsuario = u.id
+  LEFT JOIN Cliente c ON v.idCliente = c.id
+  WHERE v.estado <> -1
+    AND CAST(v.id AS VARCHAR) + CAST(v.idUsuario AS VARCHAR) + 
+        CAST(v.idCliente AS VARCHAR) + CAST(v.total AS VARCHAR) + 
+        CAST(v.montoPago AS VARCHAR) + CAST(v.montoCambio AS VARCHAR) + 
+        ISNULL(c.nombres, '') + ISNULL(c.primerApellido, '') + ISNULL(c.segundoApellido, '') LIKE '%' + REPLACE(@parametro, ' ', '%') + '%'
+  ORDER BY v.fecha DESC;
+END;
+GO
+
+EXEC paVentaListar 'sierra';
+EXEC paVentaListar '';
+
 -- cliente procedimiento no ejecutado revisar
 DROP PROC paClienteListar;
 GO
@@ -274,3 +303,4 @@ SELECT * FROM Cliente;
 SELECT * FROM Categoria;
 SELECT * FROM Producto;
 SELECT * FROM VentaDetalle;
+SELECT * FROM Venta;
