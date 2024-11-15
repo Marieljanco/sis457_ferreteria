@@ -198,6 +198,10 @@ EXEC paClienteListar 'paco';
 -- fin proc cliente
 
 -- DML
+INSERT INTO Producto (codigo, descripcion, marca, unidadMedida, precioVenta, stock, idCategoria)
+VALUES ('P001', 'Tubo de PVC 2"', 'Plomería S.A.', 'Metro', 15.50, 100, 1);
+
+
 INSERT INTO Categoria(nombre)
 VALUES('Herramientas Eléctricas');
 
@@ -251,4 +255,6 @@ SELECT * FROM Producto WHERE estado<>-1;
 SELECT * FROM Usuario;
 SELECT * FROM Empleado;
 SELECT * FROM Cliente;
-
+SELECT * FROM Categoria;
+SELECT * FROM Producto;
+SELECT * FROM VentaDetalle;

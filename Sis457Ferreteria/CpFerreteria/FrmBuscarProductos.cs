@@ -20,7 +20,7 @@ namespace CpFerreteria
             InitializeComponent();
         }
 
-		private void FrmBusquedaProducto_Load(object sender, EventArgs e)
+		private void FrmBuscarProducto_Load(object sender, EventArgs e)
 		{
 			listar();
 		}
@@ -56,10 +56,9 @@ namespace CpFerreteria
 
 		private void btnSeleccionar_Click(object sender, EventArgs e)
 		{
-			// Verifica si hay una fila seleccionada
 			if (dgvListaProducto.SelectedRows.Count > 0)
 			{
-				int row = dgvListaProducto.SelectedRows[0].Index; // Obtener la fila seleccionada
+				int row = dgvListaProducto.SelectedRows[0].Index;
 
 				_producto = new Producto()
 				{
@@ -70,20 +69,17 @@ namespace CpFerreteria
 					stock = Convert.ToInt32(dgvListaProducto.Rows[row].Cells["stock"].Value)
 				};
 
-				// Indicar que se seleccionó un producto
 				this.DialogResult = DialogResult.OK;
 				this.Close();
 			}
 			else
 			{
-				// Si no hay fila seleccionada, puedes mostrar un mensaje de error
+				// mensaje de error
 				MessageBox.Show("Por favor, seleccione un producto.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
 		}
-
 		private void btnCancelar_Click(object sender, EventArgs e)
 		{
-			// Cerrar el formulario sin hacer nada
 			this.DialogResult = DialogResult.Cancel;
 			this.Close();
 		}

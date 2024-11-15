@@ -116,13 +116,12 @@ namespace CpFerreteria
 				}
 			}
 		}
-
-		//private void btnBuscarCliente_Click(object sender, EventArgs e)
-		//{
-		//	using (var modal = new FrmBusquedaCliente())
-		//	{
-		//		var result = modal.ShowDialog();
-		//	}
-		//}
+		private void btnBuscarCliente_Click(object sender, EventArgs e)
+		{
+			//using (var modal = new FrmBusquedaCliente())
+			//{
+			//	var result = modal.ShowDialog();
+			//}
+		}
 	}
 }

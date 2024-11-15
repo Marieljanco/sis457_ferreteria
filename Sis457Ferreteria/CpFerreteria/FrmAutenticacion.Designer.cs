@@ -65,18 +65,20 @@
 			// lblClave
 			// 
 			this.lblClave.AutoSize = true;
+			this.lblClave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblClave.Location = new System.Drawing.Point(14, 221);
 			this.lblClave.Name = "lblClave";
-			this.lblClave.Size = new System.Drawing.Size(64, 13);
+			this.lblClave.Size = new System.Drawing.Size(79, 16);
 			this.lblClave.TabIndex = 11;
 			this.lblClave.Text = "Contraseña:";
 			// 
 			// lblUsuario
 			// 
 			this.lblUsuario.AutoSize = true;
+			this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblUsuario.Location = new System.Drawing.Point(14, 188);
 			this.lblUsuario.Name = "lblUsuario";
-			this.lblUsuario.Size = new System.Drawing.Size(46, 13);
+			this.lblUsuario.Size = new System.Drawing.Size(57, 16);
 			this.lblUsuario.TabIndex = 10;
 			this.lblUsuario.Text = "Usuario:";
 			// 
@@ -102,6 +104,9 @@
 			// 
 			// btnSalir
 			// 
+			this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(126)))), ((int)(((byte)(189)))));
+			this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnSalir.Image = global::CpFerreteria.Properties.Resources.close;
 			this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnSalir.Location = new System.Drawing.Point(167, 256);
@@ -110,11 +115,14 @@
 			this.btnSalir.TabIndex = 16;
 			this.btnSalir.Text = "Salir";
 			this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnSalir.UseVisualStyleBackColor = true;
+			this.btnSalir.UseVisualStyleBackColor = false;
 			this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
 			// 
 			// btnIngresar
 			// 
+			this.btnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(126)))), ((int)(((byte)(189)))));
+			this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnIngresar.Image = global::CpFerreteria.Properties.Resources.login_okferre;
 			this.btnIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnIngresar.Location = new System.Drawing.Point(58, 256);
@@ -123,7 +131,7 @@
 			this.btnIngresar.TabIndex = 15;
 			this.btnIngresar.Text = "Ingresar";
 			this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnIngresar.UseVisualStyleBackColor = true;
+			this.btnIngresar.UseVisualStyleBackColor = false;
 			this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
 			// 
 			// pctLogo
@@ -140,6 +148,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.Thistle;
 			this.ClientSize = new System.Drawing.Size(274, 323);
 			this.Controls.Add(this.btnSalir);
 			this.Controls.Add(this.btnIngresar);

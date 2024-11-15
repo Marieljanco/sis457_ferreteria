@@ -42,20 +42,13 @@
 			this.txtParametro = new System.Windows.Forms.TextBox();
 			this.lblBusqueda = new System.Windows.Forms.Label();
 			this.lblTitulo = new System.Windows.Forms.Label();
-			this.btnNuevo = new System.Windows.Forms.Button();
 			this.pnlAcciones = new System.Windows.Forms.Panel();
-			this.btnCerrar = new System.Windows.Forms.Button();
-			this.btnEliminar = new System.Windows.Forms.Button();
-			this.btnEditar = new System.Windows.Forms.Button();
 			this.txtPrimerApellido = new System.Windows.Forms.TextBox();
 			this.erpCedulaIdentidad = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpNombres = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpApellidos = new System.Windows.Forms.ErrorProvider(this.components);
 			this.erpDireccion = new System.Windows.Forms.ErrorProvider(this.components);
-			this.btnBuscar = new System.Windows.Forms.Button();
 			this.erpCelular = new System.Windows.Forms.ErrorProvider(this.components);
-			this.btnCancelar = new System.Windows.Forms.Button();
-			this.btnGuardar = new System.Windows.Forms.Button();
 			this.lblSegundoApellido = new System.Windows.Forms.Label();
 			this.txtNombres = new System.Windows.Forms.TextBox();
 			this.txtCedulaIdentidad = new System.Windows.Forms.TextBox();
@@ -64,6 +57,13 @@
 			this.lblCedulaIdentidad = new System.Windows.Forms.Label();
 			this.gbxDatos = new System.Windows.Forms.GroupBox();
 			this.lblDirección = new System.Windows.Forms.Label();
+			this.btnCerrar = new System.Windows.Forms.Button();
+			this.btnEliminar = new System.Windows.Forms.Button();
+			this.btnEditar = new System.Windows.Forms.Button();
+			this.btnNuevo = new System.Windows.Forms.Button();
+			this.btnCancelar = new System.Windows.Forms.Button();
+			this.btnGuardar = new System.Windows.Forms.Button();
+			this.btnBuscar = new System.Windows.Forms.Button();
 			this.gbxLista.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
 			this.pnlAcciones.SuspendLayout();
@@ -80,7 +80,7 @@
 			this.txtUsuario.Location = new System.Drawing.Point(665, 55);
 			this.txtUsuario.MaxLength = 15;
 			this.txtUsuario.Name = "txtUsuario";
-			this.txtUsuario.Size = new System.Drawing.Size(144, 20);
+			this.txtUsuario.Size = new System.Drawing.Size(144, 22);
 			this.txtUsuario.TabIndex = 20;
 			// 
 			// cbxCargo
@@ -95,24 +95,26 @@
             "Seguridad"});
 			this.cbxCargo.Location = new System.Drawing.Point(665, 27);
 			this.cbxCargo.Name = "cbxCargo";
-			this.cbxCargo.Size = new System.Drawing.Size(144, 21);
+			this.cbxCargo.Size = new System.Drawing.Size(144, 24);
 			this.cbxCargo.TabIndex = 19;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.Location = new System.Drawing.Point(597, 58);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(46, 13);
+			this.label1.Size = new System.Drawing.Size(57, 16);
 			this.label1.TabIndex = 18;
 			this.label1.Text = "Usuario:";
 			// 
 			// lblCargo
 			// 
 			this.lblCargo.AutoSize = true;
+			this.lblCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblCargo.Location = new System.Drawing.Point(595, 30);
 			this.lblCargo.Name = "lblCargo";
-			this.lblCargo.Size = new System.Drawing.Size(38, 13);
+			this.lblCargo.Size = new System.Drawing.Size(47, 16);
 			this.lblCargo.TabIndex = 17;
 			this.lblCargo.Text = "Cargo:";
 			// 
@@ -121,7 +123,7 @@
 			this.txtCelular.Location = new System.Drawing.Point(438, 83);
 			this.txtCelular.MaxLength = 8;
 			this.txtCelular.Name = "txtCelular";
-			this.txtCelular.Size = new System.Drawing.Size(142, 20);
+			this.txtCelular.Size = new System.Drawing.Size(142, 22);
 			this.txtCelular.TabIndex = 16;
 			// 
 			// txtDireccion
@@ -129,7 +131,7 @@
 			this.txtDireccion.Location = new System.Drawing.Point(438, 55);
 			this.txtDireccion.MaxLength = 250;
 			this.txtDireccion.Name = "txtDireccion";
-			this.txtDireccion.Size = new System.Drawing.Size(142, 20);
+			this.txtDireccion.Size = new System.Drawing.Size(142, 22);
 			this.txtDireccion.TabIndex = 15;
 			// 
 			// txtSegundoApellido
@@ -137,21 +139,23 @@
 			this.txtSegundoApellido.Location = new System.Drawing.Point(438, 27);
 			this.txtSegundoApellido.MaxLength = 50;
 			this.txtSegundoApellido.Name = "txtSegundoApellido";
-			this.txtSegundoApellido.Size = new System.Drawing.Size(142, 20);
+			this.txtSegundoApellido.Size = new System.Drawing.Size(142, 22);
 			this.txtSegundoApellido.TabIndex = 14;
 			// 
 			// lblCelular
 			// 
 			this.lblCelular.AutoSize = true;
+			this.lblCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblCelular.Location = new System.Drawing.Point(306, 86);
 			this.lblCelular.Name = "lblCelular";
-			this.lblCelular.Size = new System.Drawing.Size(42, 13);
+			this.lblCelular.Size = new System.Drawing.Size(52, 16);
 			this.lblCelular.TabIndex = 13;
 			this.lblCelular.Text = "Celular:";
 			// 
 			// gbxLista
 			// 
 			this.gbxLista.Controls.Add(this.dgvLista);
+			this.gbxLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.gbxLista.Location = new System.Drawing.Point(15, 89);
 			this.gbxLista.Name = "gbxLista";
 			this.gbxLista.Size = new System.Drawing.Size(815, 162);
@@ -182,9 +186,10 @@
 			// lblBusqueda
 			// 
 			this.lblBusqueda.AutoSize = true;
+			this.lblBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblBusqueda.Location = new System.Drawing.Point(12, 55);
 			this.lblBusqueda.Name = "lblBusqueda";
-			this.lblBusqueda.Size = new System.Drawing.Size(170, 13);
+			this.lblBusqueda.Size = new System.Drawing.Size(214, 16);
 			this.lblBusqueda.TabIndex = 15;
 			this.lblBusqueda.Text = "Buscar por CI o Nombre Completo:";
 			// 
@@ -200,17 +205,6 @@
 			this.lblTitulo.Text = "Empleados";
 			this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// btnNuevo
-			// 
-			this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnNuevo.Location = new System.Drawing.Point(205, 2);
-			this.btnNuevo.Name = "btnNuevo";
-			this.btnNuevo.Size = new System.Drawing.Size(92, 39);
-			this.btnNuevo.TabIndex = 6;
-			this.btnNuevo.Text = "Nuevo";
-			this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnNuevo.UseVisualStyleBackColor = true;
-			// 
 			// pnlAcciones
 			// 
 			this.pnlAcciones.Controls.Add(this.btnCerrar);
@@ -222,45 +216,12 @@
 			this.pnlAcciones.Size = new System.Drawing.Size(819, 43);
 			this.pnlAcciones.TabIndex = 19;
 			// 
-			// btnCerrar
-			// 
-			this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnCerrar.Location = new System.Drawing.Point(501, 2);
-			this.btnCerrar.Name = "btnCerrar";
-			this.btnCerrar.Size = new System.Drawing.Size(90, 39);
-			this.btnCerrar.TabIndex = 9;
-			this.btnCerrar.Text = "Cerrar";
-			this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnCerrar.UseVisualStyleBackColor = true;
-			// 
-			// btnEliminar
-			// 
-			this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnEliminar.Location = new System.Drawing.Point(397, 2);
-			this.btnEliminar.Name = "btnEliminar";
-			this.btnEliminar.Size = new System.Drawing.Size(98, 39);
-			this.btnEliminar.TabIndex = 8;
-			this.btnEliminar.Text = "Eliminar";
-			this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnEliminar.UseVisualStyleBackColor = true;
-			// 
-			// btnEditar
-			// 
-			this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnEditar.Location = new System.Drawing.Point(303, 2);
-			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.Size = new System.Drawing.Size(88, 39);
-			this.btnEditar.TabIndex = 7;
-			this.btnEditar.Text = "Editar";
-			this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnEditar.UseVisualStyleBackColor = true;
-			// 
 			// txtPrimerApellido
 			// 
 			this.txtPrimerApellido.Location = new System.Drawing.Point(155, 83);
 			this.txtPrimerApellido.MaxLength = 50;
 			this.txtPrimerApellido.Name = "txtPrimerApellido";
-			this.txtPrimerApellido.Size = new System.Drawing.Size(142, 20);
+			this.txtPrimerApellido.Size = new System.Drawing.Size(142, 22);
 			this.txtPrimerApellido.TabIndex = 12;
 			// 
 			// erpCedulaIdentidad
@@ -279,49 +240,17 @@
 			// 
 			this.erpDireccion.ContainerControl = this;
 			// 
-			// btnBuscar
-			// 
-			this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnBuscar.Location = new System.Drawing.Point(742, 45);
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Size = new System.Drawing.Size(92, 39);
-			this.btnBuscar.TabIndex = 17;
-			this.btnBuscar.Text = "Buscar";
-			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnBuscar.UseVisualStyleBackColor = true;
-			// 
 			// erpCelular
 			// 
 			this.erpCelular.ContainerControl = this;
 			// 
-			// btnCancelar
-			// 
-			this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnCancelar.Location = new System.Drawing.Point(707, 80);
-			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.Size = new System.Drawing.Size(108, 39);
-			this.btnCancelar.TabIndex = 11;
-			this.btnCancelar.Text = "Cancelar";
-			this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnCancelar.UseVisualStyleBackColor = true;
-			// 
-			// btnGuardar
-			// 
-			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnGuardar.Location = new System.Drawing.Point(600, 80);
-			this.btnGuardar.Name = "btnGuardar";
-			this.btnGuardar.Size = new System.Drawing.Size(101, 39);
-			this.btnGuardar.TabIndex = 10;
-			this.btnGuardar.Text = "Guardar";
-			this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.btnGuardar.UseVisualStyleBackColor = true;
-			// 
 			// lblSegundoApellido
 			// 
 			this.lblSegundoApellido.AutoSize = true;
+			this.lblSegundoApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblSegundoApellido.Location = new System.Drawing.Point(306, 30);
 			this.lblSegundoApellido.Name = "lblSegundoApellido";
-			this.lblSegundoApellido.Size = new System.Drawing.Size(93, 13);
+			this.lblSegundoApellido.Size = new System.Drawing.Size(118, 16);
 			this.lblSegundoApellido.TabIndex = 6;
 			this.lblSegundoApellido.Text = "Segundo Apellido:";
 			// 
@@ -330,7 +259,7 @@
 			this.txtNombres.Location = new System.Drawing.Point(155, 55);
 			this.txtNombres.MaxLength = 50;
 			this.txtNombres.Name = "txtNombres";
-			this.txtNombres.Size = new System.Drawing.Size(142, 20);
+			this.txtNombres.Size = new System.Drawing.Size(142, 22);
 			this.txtNombres.TabIndex = 4;
 			// 
 			// txtCedulaIdentidad
@@ -338,33 +267,36 @@
 			this.txtCedulaIdentidad.Location = new System.Drawing.Point(155, 27);
 			this.txtCedulaIdentidad.MaxLength = 10;
 			this.txtCedulaIdentidad.Name = "txtCedulaIdentidad";
-			this.txtCedulaIdentidad.Size = new System.Drawing.Size(142, 20);
+			this.txtCedulaIdentidad.Size = new System.Drawing.Size(142, 22);
 			this.txtCedulaIdentidad.TabIndex = 3;
 			// 
 			// lblPrimerApellido
 			// 
 			this.lblPrimerApellido.AutoSize = true;
+			this.lblPrimerApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblPrimerApellido.Location = new System.Drawing.Point(15, 86);
 			this.lblPrimerApellido.Name = "lblPrimerApellido";
-			this.lblPrimerApellido.Size = new System.Drawing.Size(79, 13);
+			this.lblPrimerApellido.Size = new System.Drawing.Size(102, 16);
 			this.lblPrimerApellido.TabIndex = 2;
 			this.lblPrimerApellido.Text = "Primer Apellido:";
 			// 
 			// lblNombres
 			// 
 			this.lblNombres.AutoSize = true;
+			this.lblNombres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblNombres.Location = new System.Drawing.Point(15, 58);
 			this.lblNombres.Name = "lblNombres";
-			this.lblNombres.Size = new System.Drawing.Size(52, 13);
+			this.lblNombres.Size = new System.Drawing.Size(66, 16);
 			this.lblNombres.TabIndex = 1;
 			this.lblNombres.Text = "Nombres:";
 			// 
 			// lblCedulaIdentidad
 			// 
 			this.lblCedulaIdentidad.AutoSize = true;
+			this.lblCedulaIdentidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblCedulaIdentidad.Location = new System.Drawing.Point(15, 30);
 			this.lblCedulaIdentidad.Name = "lblCedulaIdentidad";
-			this.lblCedulaIdentidad.Size = new System.Drawing.Size(105, 13);
+			this.lblCedulaIdentidad.Size = new System.Drawing.Size(131, 16);
 			this.lblCedulaIdentidad.TabIndex = 0;
 			this.lblCedulaIdentidad.Text = "Cédula de Identidad:";
 			// 
@@ -388,6 +320,7 @@
 			this.gbxDatos.Controls.Add(this.lblPrimerApellido);
 			this.gbxDatos.Controls.Add(this.lblNombres);
 			this.gbxDatos.Controls.Add(this.lblCedulaIdentidad);
+			this.gbxDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.gbxDatos.Location = new System.Drawing.Point(15, 307);
 			this.gbxDatos.Name = "gbxDatos";
 			this.gbxDatos.Size = new System.Drawing.Size(819, 123);
@@ -398,23 +331,125 @@
 			// lblDirección
 			// 
 			this.lblDirección.AutoSize = true;
+			this.lblDirección.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblDirección.Location = new System.Drawing.Point(306, 58);
 			this.lblDirección.Name = "lblDirección";
-			this.lblDirección.Size = new System.Drawing.Size(55, 13);
+			this.lblDirección.Size = new System.Drawing.Size(67, 16);
 			this.lblDirección.TabIndex = 7;
 			this.lblDirección.Text = "Dirección:";
+			// 
+			// btnCerrar
+			// 
+			this.btnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+			this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Default;
+			this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCerrar.Image = global::CpFerreteria.Properties.Resources.cancelferre;
+			this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnCerrar.Location = new System.Drawing.Point(512, 2);
+			this.btnCerrar.Name = "btnCerrar";
+			this.btnCerrar.Size = new System.Drawing.Size(90, 39);
+			this.btnCerrar.TabIndex = 13;
+			this.btnCerrar.Text = "Cerrar";
+			this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnCerrar.UseVisualStyleBackColor = false;
+			// 
+			// btnEliminar
+			// 
+			this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+			this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEliminar.Image = global::CpFerreteria.Properties.Resources.deleteferre;
+			this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnEliminar.Location = new System.Drawing.Point(408, 2);
+			this.btnEliminar.Name = "btnEliminar";
+			this.btnEliminar.Size = new System.Drawing.Size(98, 39);
+			this.btnEliminar.TabIndex = 12;
+			this.btnEliminar.Text = "Eliminar";
+			this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnEliminar.UseVisualStyleBackColor = false;
+			// 
+			// btnEditar
+			// 
+			this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+			this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnEditar.Image = global::CpFerreteria.Properties.Resources.editferre;
+			this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnEditar.Location = new System.Drawing.Point(314, 2);
+			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.Size = new System.Drawing.Size(88, 39);
+			this.btnEditar.TabIndex = 11;
+			this.btnEditar.Text = "Editar";
+			this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnEditar.UseVisualStyleBackColor = false;
+			// 
+			// btnNuevo
+			// 
+			this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(190)))), ((int)(((byte)(228)))));
+			this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnNuevo.Image = global::CpFerreteria.Properties.Resources.newferre;
+			this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnNuevo.Location = new System.Drawing.Point(216, 2);
+			this.btnNuevo.Name = "btnNuevo";
+			this.btnNuevo.Size = new System.Drawing.Size(92, 39);
+			this.btnNuevo.TabIndex = 10;
+			this.btnNuevo.Text = "Nuevo";
+			this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnNuevo.UseVisualStyleBackColor = false;
+			// 
+			// btnCancelar
+			// 
+			this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(126)))), ((int)(((byte)(189)))));
+			this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnCancelar.Location = new System.Drawing.Point(707, 80);
+			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.Size = new System.Drawing.Size(108, 39);
+			this.btnCancelar.TabIndex = 11;
+			this.btnCancelar.Text = "Cancelar";
+			this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnCancelar.UseVisualStyleBackColor = false;
+			// 
+			// btnGuardar
+			// 
+			this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(126)))), ((int)(((byte)(189)))));
+			this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnGuardar.Location = new System.Drawing.Point(600, 80);
+			this.btnGuardar.Name = "btnGuardar";
+			this.btnGuardar.Size = new System.Drawing.Size(101, 39);
+			this.btnGuardar.TabIndex = 10;
+			this.btnGuardar.Text = "Guardar";
+			this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnGuardar.UseVisualStyleBackColor = false;
+			// 
+			// btnBuscar
+			// 
+			this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(126)))), ((int)(((byte)(189)))));
+			this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnBuscar.Image = global::CpFerreteria.Properties.Resources.searchferre;
+			this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnBuscar.Location = new System.Drawing.Point(742, 44);
+			this.btnBuscar.Name = "btnBuscar";
+			this.btnBuscar.Size = new System.Drawing.Size(92, 39);
+			this.btnBuscar.TabIndex = 29;
+			this.btnBuscar.Text = "Buscar";
+			this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnBuscar.UseVisualStyleBackColor = false;
 			// 
 			// FrmEmpleados
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.Color.Thistle;
 			this.ClientSize = new System.Drawing.Size(844, 442);
+			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.gbxLista);
 			this.Controls.Add(this.txtParametro);
 			this.Controls.Add(this.lblBusqueda);
 			this.Controls.Add(this.lblTitulo);
 			this.Controls.Add(this.pnlAcciones);
-			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.gbxDatos);
 			this.Name = "FrmEmpleados";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -449,17 +484,10 @@
         private System.Windows.Forms.TextBox txtParametro;
         private System.Windows.Forms.Label lblBusqueda;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Panel pnlAcciones;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.TextBox txtPrimerApellido;
         private System.Windows.Forms.ErrorProvider erpCedulaIdentidad;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.GroupBox gbxDatos;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblDirección;
         private System.Windows.Forms.Label lblSegundoApellido;
         private System.Windows.Forms.TextBox txtNombres;
@@ -471,5 +499,12 @@
         private System.Windows.Forms.ErrorProvider erpApellidos;
         private System.Windows.Forms.ErrorProvider erpDireccion;
         private System.Windows.Forms.ErrorProvider erpCelular;
-    }
+		private System.Windows.Forms.Button btnCerrar;
+		private System.Windows.Forms.Button btnEliminar;
+		private System.Windows.Forms.Button btnEditar;
+		private System.Windows.Forms.Button btnNuevo;
+		private System.Windows.Forms.Button btnCancelar;
+		private System.Windows.Forms.Button btnGuardar;
+		private System.Windows.Forms.Button btnBuscar;
+	}
 }
