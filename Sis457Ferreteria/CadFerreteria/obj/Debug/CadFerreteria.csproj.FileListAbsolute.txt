@@ -1,6 +1,5 @@
 D:\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\obj\Debug\CadFerreteria.csproj.AssemblyReference.cache
 D:\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\obj\Debug\CadFerreteria.csproj.CoreCompileInputs.cache
-D:\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\bin\Debug\CadFerreteria.dll.config
 D:\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\bin\Debug\CadFerreteria.dll
 D:\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\bin\Debug\CadFerreteria.pdb
 D:\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\bin\Debug\EntityFramework.dll
@@ -22,3 +21,4 @@ D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\obj\Debug\CadFe
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\obj\Debug\CadFerre.55DC7512.Up2Date
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\obj\Debug\CadFerreteria.dll
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\obj\Debug\CadFerreteria.pdb
+D:\sis457_ferreteria\Sis457Ferreteria\CadFerreteria\bin\Debug\CadFerreteria.dll.config

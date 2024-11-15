@@ -231,7 +231,7 @@ EXEC paVentaListar '';
 -- cliente procedimiento no ejecutado revisar
 DROP PROC paClienteListar;
 GO
-create PROCEDURE paClienteListar @parametro VARCHAR(50)
+CREATE PROCEDURE paClienteListar @parametro VARCHAR(50)
 AS
 BEGIN
     SELECT *

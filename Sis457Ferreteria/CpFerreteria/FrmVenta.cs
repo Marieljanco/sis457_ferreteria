@@ -78,7 +78,6 @@ namespace CpFerreteria
                 });
             }
 
-
             calcularTotal();
             limpiarProducto();
         }
@@ -117,15 +116,23 @@ namespace CpFerreteria
             }
         }
 
-        private void btnBuscarCliente_Click(object sender, EventArgs e)
-        {
-            using (var modal = new FrmCliente())
-            {
-            	var result = modal.ShowDialog();
-            }
-        }
+		private void btnBuscarCliente_Click(object sender, EventArgs e)
+		{
+			using (var modal = new FrmBuscarClientes())  // Crea una instancia del formulario de búsqueda de clientes
+			{
+				var result = modal.ShowDialog();  // Muestra el formulario modal y espera que el usuario lo cierre
 
-        private void btnRegistrarProducto_Click(object sender, EventArgs e)
+				if (result == DialogResult.OK)  // Si el usuario seleccionó un cliente y cerró el formulario con OK
+				{
+					// Asigna solo la cédula y el nombre del cliente a los controles correspondientes
+					txtCedulaIdentidad.Text = modal._cliente.cedulaIdentidad;  // Asigna la cédula de identidad
+					txtNombre.Text = $"{modal._cliente.nombres} {modal._cliente.primerApellido} {modal._cliente.segundoApellido}".Trim();  // Asigna el nombre completo
+				}
+			}
+		}
+
+
+		private void btnRegistrarProducto_Click(object sender, EventArgs e)
         {
             // Validar que los campos no estén vacíos
             if (string.IsNullOrWhiteSpace(txtProducto.Text) || string.IsNullOrWhiteSpace(txtPrecio.Text) || string.IsNullOrWhiteSpace(txtStock.Text))

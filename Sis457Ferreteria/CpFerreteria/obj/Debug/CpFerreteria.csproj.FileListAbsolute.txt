@@ -117,3 +117,4 @@ D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmCli
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmCliente.resources
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmBuscarProductos.resources
 D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmBuscarProductos.resources
+D:\sis457_ferreteria\Sis457Ferreteria\CpFerreteria\obj\Debug\CpFerreteria.FrmBuscarClientes.resources
