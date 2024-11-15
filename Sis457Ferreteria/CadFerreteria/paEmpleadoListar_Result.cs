@@ -10,22 +10,20 @@
 namespace CadFerreteria
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class VentaDetalle
+    public partial class paEmpleadoListar_Result
     {
         public int id { get; set; }
-        public int idVenta { get; set; }
-        public int idProducto { get; set; }
-        public string nombreProducto { get; set; }
-        public decimal precioUnitario { get; set; }
-        public int cantidad { get; set; }
-        public decimal subtotal { get; set; }
+        public string cedulaIdentidad { get; set; }
+        public string nombres { get; set; }
+        public string primerApellido { get; set; }
+        public string segundoApellido { get; set; }
+        public string direccion { get; set; }
+        public long celular { get; set; }
+        public string cargo { get; set; }
         public string usuarioRegistro { get; set; }
         public System.DateTime fechaRegistro { get; set; }
-        public short estado { get; set; }
-    
-        public virtual Producto Producto { get; set; }
-        public virtual Venta Venta { get; set; }
+        public int idUsuario { get; set; }
+        public string usuario { get; set; }
     }
 }

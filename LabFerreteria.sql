@@ -175,13 +175,29 @@ ALTER TABLE VentaDetalle ADD fechaRegistro DATETIME NOT NULL DEFAULT GETDATE();
 ALTER TABLE VentaDetalle ADD estado SMALLINT NOT NULL DEFAULT 1; -- -1: Eliminado, 0: Inactivo, 1: Activo
 
 
-DROP PROC paProductoListar;
 GO
-
-CREATE PROC paProductoListar @parametro VARCHAR(50)
+ALTER PROC paProductoListar @parametro VARCHAR(100)
 AS
   SELECT * FROM Producto
-  WHERE estado<>-1 AND descripcion LIKE '%'+REPLACE(@parametro,' ','%')+'%'; 
+  WHERE estado<>-1 AND descripcion LIKE '%'+REPLACE(@parametro, ' ', '%')+'%'
+  ORDER BY descripcion;
+
+GO
+create PROC paEmpleadoListar @parametro VARCHAR(50)
+AS
+  SELECT e.id, e.cedulaIdentidad, nombres, ISNULL(e.primerApellido,'') AS primerApellido, 
+		 ISNULL(e.segundoApellido, '') AS segundoApellido, e.direccion, e.celular, e.cargo,
+		 ISNULL(e.usuarioRegistro, '') AS usuarioRegistro, ISNULL(e.fechaRegistro,GETDATE()) AS fechaRegistro, 
+		 ISNULL(u.id,0) as idUsuario, ISNULL(u.usuario, '') as usuario
+  FROM Empleado e
+  LEFT JOIN Usuario u ON e.id = u.idEmpleado
+  WHERE e.estado<>-1 
+		AND e.cedulaIdentidad+e.nombres+e.primerApellido+e.segundoApellido LIKE '%'+REPLACE(@parametro, ' ', '%')+'%'
+  ORDER BY e.nombres,e.primerApellido;
+
+EXEC paProductoListar 'tubo';
+EXEC paEmpleadoListar 'abril';
+EXEC paEmpleadoListar 'eli';
 
 -- cliente procedimiento no ejecutado revisar
 DROP PROC paClienteListar;
