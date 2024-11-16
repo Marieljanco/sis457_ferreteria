@@ -44,7 +44,7 @@ CREATE TABLE Cliente (
   nombres VARCHAR(30) NOT NULL,
   primerApellido VARCHAR(30) NULL,
   segundoApellido VARCHAR(30) NULL,
-  celular BIGINT NOT NULL,
+  celular BIGINT NOT NULL
 );
 GO
 
@@ -58,22 +58,30 @@ CREATE TABLE Proveedor (
 GO
 
 CREATE TABLE Categoria (
-  id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-  nombre VARCHAR(30) NOT NULL
+  id INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+  nombre VARCHAR(30) NOT NULL       
 );
+
 GO
 
+SELECT id, nombre FROM Categoria;
+
+
+
+
+
+
 CREATE TABLE Producto (
-  id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-  codigo VARCHAR(20) NOT NULL,
-  descripcion VARCHAR(250) NOT NULL,
-  marca VARCHAR(20) NULL,
-  unidadMedida VARCHAR(20) NOT NULL,
-  precioVenta DECIMAL(10, 2) NOT NULL CHECK(precioVenta > 0),
-  stock INT NOT NULL,
-  idCategoria INT NOT NULL,
+  id INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+  codigo VARCHAR(20) NOT NULL,               
+  descripcion VARCHAR(250) NOT NULL,         
+  unidadMedida VARCHAR(20) NOT NULL,         
+  precioVenta DECIMAL(10, 2) NOT NULL CHECK(precioVenta > 0), 
+  stock INT NOT NULL CHECK(stock >= 0),     
+  idCategoria INT NOT NULL,                  
   CONSTRAINT fk_Producto_Categoria FOREIGN KEY(idCategoria) REFERENCES Categoria(id)
 );
+
 GO
 
 CREATE TABLE Usuario (
@@ -242,25 +250,29 @@ BEGIN
 EXEC paClienteListar 'paco';
 -- fin proc cliente
 
--- DML
-INSERT INTO Producto (codigo, descripcion, marca, unidadMedida, precioVenta, stock, idCategoria)
-VALUES ('P001', 'Tubo de PVC 2"', 'Plomería S.A.', 'Metro', 15.50, 100, 1);
+
+-- Categoria
+
+INSERT INTO Categoria (nombre, usuarioRegistro, fechaRegistro, estado) 
+VALUES ('Herramientas', 'admin', GETDATE(), 1);
+
+INSERT INTO Categoria (nombre) VALUES ('Herramientas');
+INSERT INTO Categoria (nombre) VALUES ('Materiales de Construcción');
+INSERT INTO Categoria (nombre) VALUES ('Electricidad');
+INSERT INTO Categoria (nombre) VALUES ('Pinturas');
 
 
-INSERT INTO Categoria(nombre)
-VALUES('Herramientas Eléctricas');
+-- producto
+INSERT INTO Producto (codigo, descripcion, marca, unidadMedida, precioVenta, stock, idCategoria) 
+VALUES ('H001', 'Martillo de acero', 'Truper', 'Unidad', 120.50, 50, 1);
 
-INSERT INTO Categoria(nombre)
-VALUES('Herramientas Manuales');
+INSERT INTO Producto (codigo, descripcion, marca, unidadMedida, precioVenta, stock, idCategoria) 
+VALUES ('M001', 'Cemento Portland 50kg', 'Cemex', 'Bolsa', 75.00, 100, 2);
 
-INSERT INTO Categoria(nombre)
-VALUES('Plomería');
+INSERT INTO Producto (codigo, descripcion, marca, unidadMedida, precioVenta, stock, idCategoria) 
+VALUES ('E001', 'Cable eléctrico 10m', 'Condumex', 'Rollo', 250.00, 30, 3);
 
-INSERT INTO Categoria(nombre)
-VALUES('Electricidad');
 
-INSERT INTO Categoria(nombre)
-VALUES('Materiales de Construcción');
 
 INSERT INTO Proveedor(nit, razonSocial, direccion, telefono)
 VALUES(1016259020, 'Fábrica Nacional de Cemento S.A.', 'Av. Marcelo Quiroga Sta. Cruz', '6453882')
@@ -304,3 +316,16 @@ SELECT * FROM Categoria;
 SELECT * FROM Producto;
 SELECT * FROM VentaDetalle;
 SELECT * FROM Venta;
+
+DELETE FROM Producto; -- Elimina primero los datos relacionados en Producto
+DELETE FROM Categoria; -- Luego elimina los datos de Categoria
+
+INSERT INTO Producto (codigo, descripcion, marca, unidadMedida, precioVenta, stock, idCategoria) 
+VALUES ('H001', 'Martillo de acero', 'Truper', 'Unidad', 120.50, 50, 1); -- Relacionado con 'Herramientas'
+
+
+INSERT INTO Categoria (nombre) VALUES ('Herramientas');
+INSERT INTO Categoria (nombre) VALUES ('Materiales de Construcción');
+INSERT INTO Categoria (nombre) VALUES ('Electricidad');
+INSERT INTO Categoria (nombre) VALUES ('Pinturas');
+

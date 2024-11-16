@@ -9,16 +9,26 @@ namespace ClnFerreteria
 {
 	public class ProductoCln
 	{
-		public static int insertar(Producto producto) 
-		{
-			using (var context = new LabFerreteriaEntities())
-			{
-				context.Producto.Add(producto);
-				context.SaveChanges();
-				return producto.id;
-			}
-		}
-		public static int actualizar(Producto producto)
+        public static int insertar(Producto producto)
+        {
+            using (var context = new LabFerreteriaEntities())
+            {
+                try
+                {
+                    context.Producto.Add(producto);
+                    context.SaveChanges(); // Aquí se captura el error
+                    return producto.id;
+                }
+                catch (Exception ex)
+                {
+                    // Imprime el error para depuración
+                    Console.WriteLine("Error al insertar producto: " + ex.Message);
+                    throw; // Lanza la excepción para manejarla en niveles superiores si es necesario
+                }
+            }
+        }
+
+        public static int actualizar(Producto producto)
 		{
 			using (var context = new LabFerreteriaEntities())
 			{

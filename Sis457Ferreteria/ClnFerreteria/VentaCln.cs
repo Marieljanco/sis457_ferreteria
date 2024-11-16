@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClnPizzeria
+namespace ClnFerreteria
 {
     public class VentaCln
     {
