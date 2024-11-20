@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClnFerreteria", "ClnFerrete
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CpFerreteria", "CpFerreteria\CpFerreteria.csproj", "{D375AC98-76FA-4442-B990-DF81AD5069FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFerreteria", "WebFerreteria\WebFerreteria.csproj", "{5051084C-B431-4DCB-967D-92740952D9F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D375AC98-76FA-4442-B990-DF81AD5069FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D375AC98-76FA-4442-B990-DF81AD5069FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D375AC98-76FA-4442-B990-DF81AD5069FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5051084C-B431-4DCB-967D-92740952D9F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5051084C-B431-4DCB-967D-92740952D9F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5051084C-B431-4DCB-967D-92740952D9F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5051084C-B431-4DCB-967D-92740952D9F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
