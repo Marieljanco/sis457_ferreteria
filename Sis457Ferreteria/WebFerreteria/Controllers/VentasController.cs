@@ -9,23 +9,23 @@ using WebFerreteria.Models;
 
 namespace WebFerreteria.Controllers
 {
-    public class VentaController : Controller
+    public class VentasController : Controller
     {
         private readonly LabFerreteriaContext _context;
 
-        public VentaController(LabFerreteriaContext context)
+        public VentasController(LabFerreteriaContext context)
         {
             _context = context;
         }
 
-        // GET: Ventums
+        // GET: Ventas
         public async Task<IActionResult> Index()
         {
             var labFerreteriaContext = _context.Venta.Include(v => v.IdClienteNavigation).Include(v => v.IdUsuarioNavigation);
             return View(await labFerreteriaContext.ToListAsync());
         }
 
-        // GET: Ventums/Details/5
+        // GET: Ventas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,19 +33,19 @@ namespace WebFerreteria.Controllers
                 return NotFound();
             }
 
-            var ventum = await _context.Venta
+            var venta = await _context.Venta
                 .Include(v => v.IdClienteNavigation)
                 .Include(v => v.IdUsuarioNavigation)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (ventum == null)
+            if (venta == null)
             {
                 return NotFound();
             }
 
-            return View(ventum);
+            return View(venta);
         }
 
-        // GET: Ventums/Create
+        // GET: Ventas/Create
         public IActionResult Create()
         {
             ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id");
@@ -53,25 +53,25 @@ namespace WebFerreteria.Controllers
             return View();
         }
 
-        // POST: Ventums/Create
+        // POST: Ventas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdUsuario,IdCliente,Total,MontoPago,MontoCambio,Fecha,UsuarioRegistro,FechaRegistro,Estado")] Ventum ventum)
+        public async Task<IActionResult> Create([Bind("Id,IdUsuario,IdCliente,Total,MontoPago,MontoCambio,Fecha,UsuarioRegistro,FechaRegistro,Estado")] Venta venta)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(ventum);
+                _context.Add(venta);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", ventum.IdCliente);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Id", ventum.IdUsuario);
-            return View(ventum);
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", venta.IdCliente);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Id", venta.IdUsuario);
+            return View(venta);
         }
 
-        // GET: Ventums/Edit/5
+        // GET: Ventas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,24 +79,24 @@ namespace WebFerreteria.Controllers
                 return NotFound();
             }
 
-            var ventum = await _context.Venta.FindAsync(id);
-            if (ventum == null)
+            var venta = await _context.Venta.FindAsync(id);
+            if (venta == null)
             {
                 return NotFound();
             }
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", ventum.IdCliente);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Id", ventum.IdUsuario);
-            return View(ventum);
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", venta.IdCliente);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Id", venta.IdUsuario);
+            return View(venta);
         }
 
-        // POST: Ventums/Edit/5
+        // POST: Ventas/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,IdUsuario,IdCliente,Total,MontoPago,MontoCambio,Fecha,UsuarioRegistro,FechaRegistro,Estado")] Ventum ventum)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,IdUsuario,IdCliente,Total,MontoPago,MontoCambio,Fecha,UsuarioRegistro,FechaRegistro,Estado")] Venta venta)
         {
-            if (id != ventum.Id)
+            if (id != venta.Id)
             {
                 return NotFound();
             }
@@ -105,12 +105,12 @@ namespace WebFerreteria.Controllers
             {
                 try
                 {
-                    _context.Update(ventum);
+                    _context.Update(venta);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!VentumExists(ventum.Id))
+                    if (!VentaExists(venta.Id))
                     {
                         return NotFound();
                     }
@@ -121,12 +121,12 @@ namespace WebFerreteria.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", ventum.IdCliente);
-            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Id", ventum.IdUsuario);
-            return View(ventum);
+            ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", venta.IdCliente);
+            ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Id", venta.IdUsuario);
+            return View(venta);
         }
 
-        // GET: Ventums/Delete/5
+        // GET: Ventas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,34 +134,34 @@ namespace WebFerreteria.Controllers
                 return NotFound();
             }
 
-            var ventum = await _context.Venta
+            var venta = await _context.Venta
                 .Include(v => v.IdClienteNavigation)
                 .Include(v => v.IdUsuarioNavigation)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (ventum == null)
+            if (venta == null)
             {
                 return NotFound();
             }
 
-            return View(ventum);
+            return View(venta);
         }
 
-        // POST: Ventums/Delete/5
+        // POST: Ventas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var ventum = await _context.Venta.FindAsync(id);
-            if (ventum != null)
+            var venta = await _context.Venta.FindAsync(id);
+            if (venta != null)
             {
-                _context.Venta.Remove(ventum);
+                _context.Venta.Remove(venta);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool VentumExists(int id)
+        private bool VentaExists(int id)
         {
             return _context.Venta.Any(e => e.Id == id);
         }

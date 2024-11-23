@@ -62,24 +62,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventums/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xDcmVhdGUuY3NodG1s
+[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventums/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xEZWxldGUuY3NodG1s
+[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventums/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xEZXRhaWxzLmNzaHRtbA==
+[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventums/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xFZGl0LmNzaHRtbA==
+[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventums/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudHVtc1xJbmRleC5jc2h0bWw=
+[D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/Ventas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/sis457_ferreteria/Sis457Ferreteria/WebFerreteria/Views/_ViewImports.cshtml]

@@ -15,7 +15,7 @@ public partial class LabFerreteriaContext : DbContext
     {
     }
 
-    public virtual DbSet<Categorium> Categoria { get; set; }
+    public virtual DbSet<Categoria> Categoria { get; set; }
 
     public virtual DbSet<Cliente> Clientes { get; set; }
 
@@ -33,7 +33,7 @@ public partial class LabFerreteriaContext : DbContext
 
     public virtual DbSet<VentaDetalle> VentaDetalles { get; set; }
 
-    public virtual DbSet<Ventum> Venta { get; set; }
+    public virtual DbSet<Venta> Venta { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -41,7 +41,7 @@ public partial class LabFerreteriaContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Categorium>(entity =>
+        modelBuilder.Entity<Categoria>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Categori__3213E83F75989028");
 
@@ -363,7 +363,7 @@ public partial class LabFerreteriaContext : DbContext
                 .HasConstraintName("fk_VentaDetalle_Venta");
         });
 
-        modelBuilder.Entity<Ventum>(entity =>
+        modelBuilder.Entity<Venta>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Venta__3213E83F64FB981C");
 

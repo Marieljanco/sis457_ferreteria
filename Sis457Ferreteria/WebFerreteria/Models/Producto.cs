@@ -29,7 +29,7 @@ public partial class Producto
 
     public virtual ICollection<CompraDetalle> CompraDetalles { get; set; } = new List<CompraDetalle>();
 
-    public virtual Categorium IdCategoriaNavigation { get; set; } = null!;
+    public virtual Categoria IdCategoriaNavigation { get; set; } = null!;
 
     public virtual ICollection<VentaDetalle> VentaDetalles { get; set; } = new List<VentaDetalle>();
 }
