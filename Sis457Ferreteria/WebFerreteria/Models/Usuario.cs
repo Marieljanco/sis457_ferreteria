@@ -19,8 +19,6 @@ public partial class Usuario
 
     public short Estado { get; set; }
 
-    public virtual ICollection<Compra> Compras { get; set; } = new List<Compra>();
-
     public virtual Empleado IdEmpleadoNavigation { get; set; } = null!;
 
     public virtual ICollection<Venta> Venta { get; set; } = new List<Venta>();

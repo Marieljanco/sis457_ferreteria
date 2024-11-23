@@ -11,9 +11,9 @@ namespace WebFerreteria.Controllers
 {
     public class ClientesController : Controller
     {
-        private readonly LabFerreteriaContext _context;
+        private readonly FinalFerreteriaContext _context;
 
-        public ClientesController(LabFerreteriaContext context)
+        public ClientesController(FinalFerreteriaContext context)
         {
             _context = context;
         }
