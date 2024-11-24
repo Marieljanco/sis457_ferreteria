@@ -13,9 +13,9 @@ namespace WebFerreteria.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        private readonly LabFerreteriaContext _context;
+        private readonly FinalFerreteriaContext _context;
 
-        public AccountController(LabFerreteriaContext context)
+        public AccountController(FinalFerreteriaContext context)
         {
             _context = context;
         }
