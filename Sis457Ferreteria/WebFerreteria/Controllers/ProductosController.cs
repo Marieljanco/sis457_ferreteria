@@ -21,7 +21,8 @@ namespace WebFerreteria.Controllers
         // GET: Productos
         public async Task<IActionResult> Index()
         {
-            var finalFerreteriaContext = _context.Productos.Include(p => p.IdCategoriaNavigation);
+            var finalFerreteriaContext = _context.Productos.Include(p => p.IdCategoriaNavigation)
+                .Where(p => p.Estado != -1);
             return View(await finalFerreteriaContext.ToListAsync());
         }
 
@@ -47,7 +48,11 @@ namespace WebFerreteria.Controllers
         // GET: Productos/Create
         public IActionResult Create()
         {
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "Id", "Id");
+            ViewData["IdCategoria"] = new SelectList(_context.Categoria.Where(c => c.Estado != -1),
+            "Id",
+            "Descripcion"
+            );
+
             return View();
         }
 
@@ -58,11 +63,18 @@ namespace WebFerreteria.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Codigo,Descripcion,Marca,UnidadMedida,PrecioVenta,Stock,IdCategoria,UsuarioRegistro,FechaRegistro,Estado")] Producto producto)
         {
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(producto.Codigo) && !string.IsNullOrEmpty(producto.Marca) && !string.IsNullOrEmpty(producto.Descripcion))
             {
+                producto.UsuarioRegistro = User.Identity.Name;
+                producto.FechaRegistro = DateTime.Now;
+                producto.Estado = 1;
+
                 _context.Add(producto);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+                //_context.Add(producto);
+                //await _context.SaveChangesAsync();
+                //return RedirectToAction(nameof(Index));
             }
             ViewData["IdCategoria"] = new SelectList(_context.Categoria, "Id", "Id", producto.IdCategoria);
             return View(producto);
