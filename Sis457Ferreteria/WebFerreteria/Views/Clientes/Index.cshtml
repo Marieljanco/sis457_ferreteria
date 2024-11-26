@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -49,13 +50,9 @@
                     @Html.DisplayFor(modelItem => item.FechaRegistro)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-
-                    @* <a asp-action="Edit" asp-route-id="@item.Id" title="Editar"><i class="fa fa-edit"></i></a> |
-                <a asp-action="Details" asp-route-id="@item.Id" title="Detalle"><i class="fa fa-list"></i></a> |
-                <a asp-action="Delete" asp-route-id="@item.Id" title="Eliminar"><i class="fa fa-trash"></i></a> *@
+                    <a asp-action="Edit" asp-route-id="@item.Id" title="Editar"><i class="fa fa-edit"></i></a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" title="Detalle"><i class="fa fa-list"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" title="Eliminar"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
         }

@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - WebFerreteria</title>
+
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
 
@@ -18,13 +19,15 @@
 
     <!-- Style Sheet ================================================== -->
     <link rel="stylesheet" type="text/css" href="~/css/style.css">
-    <link rel="stylesheet" href="~/WebFerreteria.styles.css" asp-append-version="true" />
 
     <!-- Google Fonts ================================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
+
+    <link rel="stylesheet" href="~/WebFerreteria.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
 
 </head>
 
@@ -161,44 +164,23 @@
         </symbol>
     </svg>
 
-    @* <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">WebFerreteria</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header> *@
     <header id="header">
         <nav class="header-top">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center py-3">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/main-logo.png" class="logo img-fluid">
+                        <img src="~/images/main-logo.png" class="logo img-fluid">
                     </a>
                     <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
                         <li class="phone text-black fw-medium text-capitalize d-flex align-items-center ms-4">
                             <svg class="text-primary me-1" width="20" height="20">
                                 <use xlink:href="#phone"></use>
-                            </svg> call: 666 333 9999
+                            </svg> Llamar: 666 333 9999
                         </li>
                         <li class="time text-black fw-medium text-capitalize d-flex align-items-center ms-4">
                             <svg class="text-primary me-1" width="20" height="20">
                                 <use xlink:href="#clock"></use>
-                            </svg> 8:00-18:00, Sat: Closed
+                            </svg> 8:00-18:00, Sáb: Cerrado
                         </li>
                     </ul>
                 </div>
@@ -220,8 +202,8 @@
                     </div>
                     <div class="offcanvas-body align-items-center justify-content-center">
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item px-3 py-1 py-lg-0">
-                                <a class="nav-link active p-0" aria-current="page" href="index.html">Home</a>
+                            <li class="nav-item">
+                                <a class="nav-link me-4 active" asp-controller="Home" asp-action="Index">Inicio</a>
                             </li>
                             <li class="nav-item px-3 py-1 py-lg-0 dropdown">
                                 <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -240,11 +222,10 @@
                                     <li><a href="index.html" class="dropdown-item">Services </a></li>
                                     <li><a href="index.html" class="dropdown-item">Project </a></li>
                                     <li><a href="index.html" class="dropdown-item">Reviews </a></li>
-                                    <li><a href="index.html" class="dropdown-item">FAQs </a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item px-3 py-1 py-lg-0">
-                                <a class="nav-link p-0" href="index.html">About</a>
+                            <li class="nav-item">
+                                <a class="nav-link me-4" href="#about-us">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item px-3 py-1 py-lg-0">
                                 <a class="nav-link p-0" href="index.html">Services</a>
@@ -255,8 +236,8 @@
                             <li class="nav-item px-3 py-1 py-lg-0">
                                 <a class="nav-link p-0" href="index.html">Blog</a>
                             </li>
-                            <li class="nav-item px-3 py-1 py-lg-0">
-                                <a class="nav-link p-0" href="index.html">Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link me-4" asp-controller="Clientes" asp-action="Index">Clientes</a>
                             </li>
                             <li class="nav-item px-3 py-1 py-lg-0">
                                 <a class="nav-link p-0" href="index.html">Quote</a>
@@ -285,25 +266,16 @@
             </div>
         </nav>
     </header>
-    
-
-    @* <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div> *@
 
     <div class="container">
         @RenderBody()
     </div>
 
     @* <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - WebFerreteria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <div class="container">
+    &copy; 2024 - WebFerreteria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
     </footer> *@
-
-    
 
     <footer id="footer">
         <div class="container padding-small">
@@ -311,28 +283,28 @@
                 <div class="col-lg-3 col-md-6 pb-3">
                     <div class="footer-menu">
                         <a class="navbar-brand" href="index.html">
-                            <img src="images/main-logo.png" class="logo img-fluid">
+                            <img src="~/images/main-logo.png" class="logo img-fluid">
                         </a>
                         <ul class="menu-list d-flex flex-column list-unstyled mt-3">
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Home</a>
+                                </svg><a href="#"> Inicio</a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> About Us</a>
+                                </svg><a href="#"> Sobre Nosotros</a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Testimonials</a>
+                                </svg><a href="#"> Testimonios</a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Our Blog</a>
+                                </svg><a href="#"> Blog</a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
@@ -342,129 +314,103 @@
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Terms & Condition</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
                                 </svg><a href="#"> Our Services</a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Contact</a>
+                                </svg><a href="#"> Contactos</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-3">
                     <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-3 fw-semibold">HVAC Services</h5>
+                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Nuestros Servicios</h5>
                         <ul class="menu-list d-flex flex-column list-unstyled">
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> HVAC Installations </a>
+                                </svg><a href="#"> Instalación de fontanería </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> HVAC Repairs </a>
+                                </svg><a href="#"> Reparación de herramientas de construcción </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> HVAC Maintenance </a>
+                                </svg><a href="#"> Mantenimiento de herramientas </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Indoor Air Quality </a>
+                                </svg><a href="#"> Equipos y herramientas para proyectos comerciales </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Commercial HVAC </a>
+                                </svg><a href="#"> calidad del aire en espacios cerrados (productos de ventilación) </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
                                 </svg><a href="#"> Industrial HVAC </a>
                             </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Energy Efficiency Upgrades </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Emergency HVAC Services </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-3">
                     <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Other Services</h5>
+                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Otros Servicios</h5>
                         <ul class="menu-list d-flex flex-column list-unstyled">
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Ductwork Inspection and Cleaning </a>
+                                </svg><a href="#"> Herramientas y equipos de construcción </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="20" height="20">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Thermostat Installation and Programming </a>
+                                </svg><a href="#"> Suministros de plomería y electricidad </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Zoning Solutions </a>
+                                </svg><a href="#"> Entrega a domicilio de productos</a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Air Duct Sealing and Insulation </a>
+                                </svg><a href="#"> materiales de acabado (pinturas, cerámica, etc.) </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Energy Audits </a>
+                                </svg><a href="#"> Servicio de corte de materiales </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="16" height="16">
                                     <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Heat Pump Services </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Geothermal HVAC Systems </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Commercial Refrigeration Services </a>
+                                </svg><a href="#"> Reparación y mantenimiento de herramientas </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 pb-3">
                     <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Our HVAC Info</h5>
+                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Sobre Larana Ferretería</h5>
                         <ul class="menu-list d-flex flex-column list-unstyled">
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="18" height="18">
                                     <use xlink:href="#location"></use>
-                                </svg><a href="#"> Phoenix, Arizona </a>
+                                </svg><a href="#"> Sucre, Chuquisaca, Bolivia</a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="18" height="18">
                                     <use xlink:href="#email"></use>
-                                </svg><a href="#"> Youremail@gmail.com </a>
+                                </svg><a href="#"> info@laranaferreteria.com </a>
                             </li>
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="18" height="18">
@@ -474,12 +420,12 @@
                             <li class="fw-medium text-capitalize d-flex align-items-center">
                                 <svg class="text-primary me-1" width="18" height="18">
                                     <use xlink:href="#clock"></use>
-                                </svg><a href="#"> 8:00-18:00, Sat: Closed </a>
+                                </svg><a href="#"> 8:00-18:00, Sáb: Cerrado </a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-4 fw-semibold">Payment Options</h5>
+                        <h5 class=" widget-title py-2 mt-4 fw-semibold">Opciones de pago</h5>
                         <ul class="payment-links d-flex flex-wrap list-unstyled">
                             <li class="payment me-3">
                                 <a href="#">
@@ -505,19 +451,12 @@
                         </ul>
                     </div>
                     <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-4 fw-semibold">Social Link</h5>
+                        <h5 class=" widget-title py-2 mt-4 fw-semibold">Enlace a redes sociales</h5>
                         <ul class="social-links d-flex flex-wrap list-unstyled">
                             <li class="social me-3">
                                 <a href="#">
                                     <svg class=" me-1" width="24" height="24">
                                         <use xlink:href="#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="24" height="24">
-                                        <use xlink:href="#twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -550,17 +489,17 @@
         <hr class="m-0">
         <div class="container">
             <div class="footer-bottom d-md-flex justify-content-between py-4">
-                <p class=" mb-0">© 2024 HVAC - All rights reserved</p>
+                <p class=" mb-0">© 2024 LARANA - All rights reserved</p>
                 <p class=" mb-0">
-                    HTML Templates by: <a href="https://templatesjungle.com/" target="_blank"
-                                          class="text-decoration-underline fw-semibold "> TemplatesJungle</a> Distributed by: <a href="https://themewagon.com" target="blank"
-                                                                                                                                 class="text-decoration-underline fw-semibold">ThemeWagon</a>
+                    HTML Templates by:
+                    <a href="https://templatesjungle.com/" target="_blank"
+                       class="text-decoration-underline fw-semibold "> TemplatesJungle</a>
+                    Distributed by: <a href="https://themewagon.com" target="blank"
+                                       class="text-decoration-underline fw-semibold">ThemeWagon</a>
                 </p>
             </div>
         </div>
     </footer>
-
-
 
     @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@

@@ -479,11 +479,12 @@ h6 {
 /* 4.1 Header
 /*----------------------------------------------*/
 a.nav-link {
-  text-transform: capitalize;
-  font-weight: 500;
-  color: var(--dark-color);
-  font-family: var(--heading-font);
-  transition: all 0.3s ease-in-out;
+    text-transform: capitalize;
+    font-weight: 500;
+    /*color: var(--dark-color);*/
+    color: var(--dark-color) !important;
+    font-family: var(--heading-font);
+    transition: all 0.3s ease-in-out;
 }
 
 a.nav-link::after {

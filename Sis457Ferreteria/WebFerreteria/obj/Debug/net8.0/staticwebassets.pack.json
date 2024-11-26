@@ -1,435 +1,435 @@
 {
   "Files": [
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebFerreteria.bundle.scp.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebFerreteria.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebFerreteria.bundle.scp.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\ajax-loader.gif",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\css\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\site.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\style.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\vendor.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\css\\vendor.css",
       "PackagePath": "staticwebassets\\css\\vendor.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\favicon.ico",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\about.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\about.png",
       "PackagePath": "staticwebassets\\images\\about.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\banner.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\banner.jpg",
       "PackagePath": "staticwebassets\\images\\banner.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\billboard.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\billboard.jpg",
       "PackagePath": "staticwebassets\\images\\billboard.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog1.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog1.jpg",
       "PackagePath": "staticwebassets\\images\\blog1.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog2.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog2.jpg",
       "PackagePath": "staticwebassets\\images\\blog2.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog3.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog3.jpg",
       "PackagePath": "staticwebassets\\images\\blog3.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog4.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\blog4.jpg",
       "PackagePath": "staticwebassets\\images\\blog4.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand1.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand1.png",
       "PackagePath": "staticwebassets\\images\\brand1.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand2.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand2.png",
       "PackagePath": "staticwebassets\\images\\brand2.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand3.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand3.png",
       "PackagePath": "staticwebassets\\images\\brand3.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand4.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand4.png",
       "PackagePath": "staticwebassets\\images\\brand4.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand5.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\brand5.png",
       "PackagePath": "staticwebassets\\images\\brand5.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\close.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\close.png",
       "PackagePath": "staticwebassets\\images\\chocolat\\close.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\fullscreen-black.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\fullscreen-black.png",
       "PackagePath": "staticwebassets\\images\\chocolat\\fullscreen-black.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\fullscreen.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\fullscreen.png",
       "PackagePath": "staticwebassets\\images\\chocolat\\fullscreen.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\left.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\left.png",
       "PackagePath": "staticwebassets\\images\\chocolat\\left.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\loader.gif",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\loader.gif",
       "PackagePath": "staticwebassets\\images\\chocolat\\loader.gif"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\right.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\chocolat\\right.png",
       "PackagePath": "staticwebassets\\images\\chocolat\\right.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\commentor-item1.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\commentor-item1.jpg",
       "PackagePath": "staticwebassets\\images\\commentor-item1.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\commentor-item2.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\commentor-item2.jpg",
       "PackagePath": "staticwebassets\\images\\commentor-item2.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\commentor-item3.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\commentor-item3.jpg",
       "PackagePath": "staticwebassets\\images\\commentor-item3.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\cta-bg.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\cta-bg.jpg",
       "PackagePath": "staticwebassets\\images\\cta-bg.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\main-logo.png",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\main-logo.png",
       "PackagePath": "staticwebassets\\images\\main-logo.png"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project1.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project1.jpg",
       "PackagePath": "staticwebassets\\images\\project1.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project2.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project2.jpg",
       "PackagePath": "staticwebassets\\images\\project2.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project3.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project3.jpg",
       "PackagePath": "staticwebassets\\images\\project3.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project4.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\project4.jpg",
       "PackagePath": "staticwebassets\\images\\project4.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services1.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services1.jpg",
       "PackagePath": "staticwebassets\\images\\services1.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services2.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services2.jpg",
       "PackagePath": "staticwebassets\\images\\services2.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services3.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services3.jpg",
       "PackagePath": "staticwebassets\\images\\services3.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services4.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services4.jpg",
       "PackagePath": "staticwebassets\\images\\services4.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services5.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\services5.jpg",
       "PackagePath": "staticwebassets\\images\\services5.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team1.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team1.jpg",
       "PackagePath": "staticwebassets\\images\\team1.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team2.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team2.jpg",
       "PackagePath": "staticwebassets\\images\\team2.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team3.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team3.jpg",
       "PackagePath": "staticwebassets\\images\\team3.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team4.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team4.jpg",
       "PackagePath": "staticwebassets\\images\\team4.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team5.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team5.jpg",
       "PackagePath": "staticwebassets\\images\\team5.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team6.jpg",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\images\\team6.jpg",
       "PackagePath": "staticwebassets\\images\\team6.jpg"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\ajax-loader.gif",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\js\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\jquery-1.11.0.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\jquery-1.11.0.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-1.11.0.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\plugins.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\plugins.js",
       "PackagePath": "staticwebassets\\js\\plugins.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\script.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\site.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\Proyecto 457\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
