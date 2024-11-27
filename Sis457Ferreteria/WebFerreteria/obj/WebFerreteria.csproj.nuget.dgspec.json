@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj": {}
+    "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj": {}
   },
   "projects": {
-    "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj": {
+    "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
+        "projectUniqueName": "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
         "projectName": "WebFerreteria",
-        "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
+        "projectPath": "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
         "packagesPath": "C:\\Users\\ivan\\.nuget\\packages\\",
-        "outputPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\obj\\",
+        "outputPath": "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -73,10 +73,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
-            },
-            "Snickler.EFCore": {
-              "target": "Package",
-              "version": "[3.0.0, )"
             }
           },
           "imports": [

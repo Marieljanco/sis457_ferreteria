@@ -2115,18 +2115,6 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
-      "Snickler.EFCore/3.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Snickler.EFCore.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Snickler.EFCore.dll": {}
-        }
-      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -6449,21 +6437,6 @@
         "nuget.versioning.nuspec"
       ]
     },
-    "Snickler.EFCore/3.0.0": {
-      "sha512": "DovydBI8ojnRFBfGXepme9P3laK8HMacbn5vmdVsN6t/oZL66bPheUAOcsxJdqctdcMu3M2h7baAhZETOxK6Dg==",
-      "type": "package",
-      "path": "snickler.efcore/3.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net5.0/Snickler.EFCore.dll",
-        "lib/net6.0/Snickler.EFCore.dll",
-        "lib/netstandard2.0/Snickler.EFCore.dll",
-        "snickler.efcore.3.0.0.nupkg.sha512",
-        "snickler.efcore.nuspec"
-      ]
-    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -7787,8 +7760,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7",
-      "Snickler.EFCore >= 3.0.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.7"
     ]
   },
   "packageFolders": {
@@ -7798,11 +7770,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
+      "projectUniqueName": "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
       "projectName": "WebFerreteria",
-      "projectPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
+      "projectPath": "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
       "packagesPath": "C:\\Users\\ivan\\.nuget\\packages\\",
-      "outputPath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\obj\\",
+      "outputPath": "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7864,10 +7836,6 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[8.0.7, )"
-          },
-          "Snickler.EFCore": {
-            "target": "Package",
-            "version": "[3.0.0, )"
           }
         },
         "imports": [

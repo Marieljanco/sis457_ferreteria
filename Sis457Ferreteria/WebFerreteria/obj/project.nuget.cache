@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lNCSH+i/wlw=",
+  "dgSpecHash": "HCsP6yITzSM=",
   "success": true,
-  "projectFilePath": "D:\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
+  "projectFilePath": "D:\\INFORMATICA\\sis457_ferreteria\\Sis457Ferreteria\\WebFerreteria\\WebFerreteria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ivan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -126,7 +126,6 @@
     "C:\\Users\\ivan\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\ivan\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\ivan\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
-    "C:\\Users\\ivan\\.nuget\\packages\\snickler.efcore\\3.0.0\\snickler.efcore.3.0.0.nupkg.sha512",
     "C:\\Users\\ivan\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\ivan\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\ivan\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

@@ -203,7 +203,7 @@
                     <div class="offcanvas-body align-items-center justify-content-center">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link me-4 active" asp-controller="Home" asp-action="Index">Inicio</a>
+                                <a class="nav-link me-4 active" asp-controller="Home" asp-action="Index">inicio</a>
                             </li>
                             <li class="nav-item px-3 py-1 py-lg-0 dropdown">
                                 <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -225,23 +225,47 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#about-us">Sobre Nosotros</a>
+                                <a class="nav-link me-4" href="#about-us">Sobre de Nosotros</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" asp-controller="Clientes" asp-action="Index">Clientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" asp-controller="Categorias" asp-action="Index">Categorias</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" asp-controller="Productos" asp-action="Index">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" asp-controller="Empleados" asp-action="Index">Empleados</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" asp-controller="Ventas" asp-action="Index">Ventas</a>
-                            </li>
+                            @if (User.Identity.IsAuthenticated == false)
+
+                            {
+                                <a asp-controller="Account" asp-action="Login" class="user-account for-buy">
+                                    <i class="fas fa-user"></i><span>Iniciar Sesión</span>
+                                </a>
+                                @* <a asp-controller="Account" asp-action="Login" class="nav-link me-4">
+                            <i class="fas fa-user"></i> <span>Iniciar Sesión</span>
+                            </a> *@
+                            }
+
+                            else
+
+                            {
+                                <li>
+                                    @await Html.PartialAsync("_LogoutPartial")
+                                </li>
+                            }
+                            @if (User.Identity.IsAuthenticated == true)
+
+                            {
+
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" asp-controller="Categorias" asp-action="Index">Categorías</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" asp-controller="Productos" asp-action="Index">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" asp-controller="Empleados" asp-action="Index">Empleados</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link me-4" asp-controller="Ventas" asp-action="Index">Ventas</a>
+                                </li>
+
+                            }
                             <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 dropdown">
                                 <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                                    aria-expanded="false">
