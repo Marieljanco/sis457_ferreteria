@@ -67,29 +67,16 @@ namespace WebFerreteria.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CedulaIdentidad,Nombres,PrimerApellido,SegundoApellido,Direccion,Celular,Cargo,UsuarioRegistro,FechaRegistro,Estado")] Empleado empleado)
         {
-            if (!ModelState.IsValid)
+            if (!string.IsNullOrEmpty(empleado.CedulaIdentidad) && !string.IsNullOrEmpty(empleado.Nombres))
             {
-                // Si el modelo no es válido, vuelve a la vista con los datos actuales
-                return View(empleado);
-            }
-
-            try
-            {
-                // Agregar el empleado al contexto
+                empleado.UsuarioRegistro = User.Identity.Name;
+                empleado.FechaRegistro = DateTime.Now;
+                empleado.Estado = 1;
                 _context.Add(empleado);
-
-                // Guardar los cambios de forma asincrónica
                 await _context.SaveChangesAsync();
-
-                // Redirigir a la acción Index al terminar
                 return RedirectToAction(nameof(Index));
             }
-            catch (Exception ex)
-            {
-                // Capturar cualquier excepción y registrar (si es necesario)
-                ModelState.AddModelError(string.Empty, $"Error al guardar los datos: {ex.Message}");
-                return View(empleado);
-            }
+            return View(empleado);
         }
 
 

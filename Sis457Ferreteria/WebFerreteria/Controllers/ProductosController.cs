@@ -46,12 +46,12 @@ namespace WebFerreteria.Controllers
         }
 
         // GET: Productos/Create
+
+
         public IActionResult Create()
         {
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria.Where(c => c.Estado != -1),
-            "Id",
-            "Descripcion"
-            );
+            // Cargar las categorías desde la base de datos
+            ViewBag.IdCategoria = new SelectList(_context.Categoria, "Id", "Nombre");
 
             return View();
         }
@@ -59,26 +59,35 @@ namespace WebFerreteria.Controllers
         // POST: Productos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Codigo,Descripcion,Marca,UnidadMedida,PrecioVenta,Stock,IdCategoria,UsuarioRegistro,FechaRegistro,Estado")] Producto producto)
+        public async Task<IActionResult> Create(Producto producto)
         {
-            if (!string.IsNullOrEmpty(producto.Codigo) && !string.IsNullOrEmpty(producto.Marca) && !string.IsNullOrEmpty(producto.Descripcion))
+            if (ModelState.IsValid)
             {
-                producto.UsuarioRegistro = User.Identity.Name;
-                producto.FechaRegistro = DateTime.Now;
-                producto.Estado = 1;
+                try
+                {
+                    producto.FechaRegistro = DateTime.Now;
+                    producto.UsuarioRegistro = User.Identity?.Name ?? "Admin";
 
-                _context.Add(producto);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-                //_context.Add(producto);
-                //await _context.SaveChangesAsync();
-                //return RedirectToAction(nameof(Index));
+                    _context.Add(producto);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Ocurrió un error al crear el producto: " + ex.Message);
+                }
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "Id", "Id", producto.IdCategoria);
+
+            ViewBag.IdCategoria = new SelectList(_context.Categoria, "Id", "Nombre", producto.IdCategoria);
             return View(producto);
         }
+
+
 
         // GET: Productos/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -102,7 +111,7 @@ namespace WebFerreteria.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Codigo,Descripcion,Marca,UnidadMedida,PrecioVenta,Stock,IdCategoria,UsuarioRegistro,FechaRegistro,Estado")] Producto producto)
+        public async Task<IActionResult> Edit(int id, Producto producto)
         {
             if (id != producto.Id)
             {
@@ -113,25 +122,26 @@ namespace WebFerreteria.Controllers
             {
                 try
                 {
-                    _context.Update(producto);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductoExists(producto.Id))
+                    var productoExistente = await _context.Productos.AsNoTracking().FirstOrDefaultAsync(p => p.Id == id);
+                    if (productoExistente == null)
                     {
                         return NotFound();
                     }
-                    else
-                    {
-                        throw;
-                    }
+
+                    _context.Update(producto);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
-                return RedirectToAction(nameof(Index));
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Ocurrió un error al editar el producto: " + ex.Message);
+                }
             }
+
             ViewData["IdCategoria"] = new SelectList(_context.Categoria, "Id", "Id", producto.IdCategoria);
             return View(producto);
         }
+
 
         // GET: Productos/Delete/5
         public async Task<IActionResult> Delete(int? id)
