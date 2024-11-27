@@ -21,7 +21,7 @@ namespace WebFerreteria.Controllers
         // GET: Clientes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Clientes.ToListAsync());
+            return View(await _context.Clientes.Where(x => x.Estado != -1).ToListAsync());
         }
 
         // GET: Clientes/Details/5
@@ -55,8 +55,11 @@ namespace WebFerreteria.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CedulaIdentidad,Nombres,PrimerApellido,SegundoApellido,Celular,UsuarioRegistro,FechaRegistro,Estado")] Cliente cliente)
         {
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(cliente.CedulaIdentidad) && !string.IsNullOrEmpty(cliente.Nombres))
             {
+                cliente.UsuarioRegistro = User.Identity.Name;
+                cliente.FechaRegistro = DateTime.Now;
+                cliente.Estado = 1;
                 _context.Add(cliente);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,6 +99,7 @@ namespace WebFerreteria.Controllers
             {
                 try
                 {
+                    cliente.UsuarioRegistro = User.Identity.Name;
                     _context.Update(cliente);
                     await _context.SaveChangesAsync();
                 }
@@ -141,10 +145,12 @@ namespace WebFerreteria.Controllers
             var cliente = await _context.Clientes.FindAsync(id);
             if (cliente != null)
             {
-                _context.Clientes.Remove(cliente);
+                cliente.Estado = -1;
+                cliente.UsuarioRegistro = User.Identity.Name;
+                await _context.SaveChangesAsync();
+                //_context.Clientes.Remove(cliente);
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
