@@ -48,21 +48,50 @@ namespace WebFerreteria.Controllers
             return View();
         }
 
+        //public IActionResult Create()
+        //{
+        //    // Lista estática de valores para el campo Cargo
+        //    var cargos = new List<string> { "Administrador", "Empleado", "Usuario", "Cajero" };
+        //    ViewBag.Cargos = new SelectList(cargos);
+        //    return View();
+        //}
+
+
+
+
         // POST: Empleados/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Empleados/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,CedulaIdentidad,Nombres,PrimerApellido,SegundoApellido,Direccion,Celular,Cargo,UsuarioRegistro,FechaRegistro,Estado")] Empleado empleado)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
+                // Si el modelo no es válido, vuelve a la vista con los datos actuales
+                return View(empleado);
+            }
+
+            try
+            {
+                // Agregar el empleado al contexto
                 _context.Add(empleado);
+
+                // Guardar los cambios de forma asincrónica
                 await _context.SaveChangesAsync();
+
+                // Redirigir a la acción Index al terminar
                 return RedirectToAction(nameof(Index));
             }
-            return View(empleado);
+            catch (Exception ex)
+            {
+                // Capturar cualquier excepción y registrar (si es necesario)
+                ModelState.AddModelError(string.Empty, $"Error al guardar los datos: {ex.Message}");
+                return View(empleado);
+            }
         }
+
 
         // GET: Empleados/Edit/5
         public async Task<IActionResult> Edit(int? id)

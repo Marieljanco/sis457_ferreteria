@@ -359,7 +359,6 @@ D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.0\NuGet.ProjectModel.dll
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.0\NuGet.Protocol.dll
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.0\NuGet.Versioning.dll
-D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.0\Snickler.EFCore.dll
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.0\System.ClientModel.dll
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.0\System.CodeDom.dll
 D:\Proyecto 457\sis457_ferreteria\Sis457Ferreteria\WebFerreteria\bin\Debug\net8.0\System.Composition.AttributedModel.dll
