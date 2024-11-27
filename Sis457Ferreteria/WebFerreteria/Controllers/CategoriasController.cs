@@ -55,8 +55,12 @@ namespace WebFerreteria.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nombre,UsuarioRegistro,FechaRegistro,Estado")] Categoria categoria)
         {
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(categoria.Nombre))
             {
+                categoria.UsuarioRegistro = User.Identity.Name;
+                categoria.FechaRegistro = DateTime.Now;
+                categoria.Estado = 1;
+
                 _context.Add(categoria);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
