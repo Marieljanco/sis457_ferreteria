@@ -10,17 +10,16 @@
 <p>
     <a asp-action="Create"><i class="fa fa-plus"></i> Crear Nuevo</a>
 </p>
-<table>
+<table class="table">
     <thead>
         <tr>
             <th>Código</th>
             <th>Descripción</th>
             <th>Marca</th>
             <th>Unidad de Medida</th>
-            @* <th>Saldo</th> *@
             <th>Precio de Venta</th>
             <th>Stock</th>
-            <th>IdCategoria</th>
+            <th>Categoria(ID)</th>
             <th>Usuario Registro</th>
             <th>Fecha Registro</th>
             <th></th>
@@ -49,7 +48,7 @@
                     @Html.DisplayFor(modelItem => item.Stock)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Estado)
+                    @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Nombre)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.UsuarioRegistro)

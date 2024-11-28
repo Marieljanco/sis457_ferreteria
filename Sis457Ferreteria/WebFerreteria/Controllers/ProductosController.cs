@@ -90,6 +90,21 @@ namespace WebFerreteria.Controllers
 
 
         // GET: Productos/Edit/5
+        //public async Task<IActionResult> Edit(int? id)
+        //{
+        //    if (id == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var producto = await _context.Productos.FindAsync(id);
+        //    if (producto == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    ViewData["IdCategoria"] = new SelectList(_context.Categoria, "Id", "Id", producto.IdCategoria);
+        //    return View(producto);
+        //}
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -97,14 +112,23 @@ namespace WebFerreteria.Controllers
                 return NotFound();
             }
 
-            var producto = await _context.Productos.FindAsync(id);
+            // Obtener el producto a editar
+            var producto = await _context.Productos
+                .Include(p => p.IdCategoriaNavigation) // Incluir la categorí
+                .FirstOrDefaultAsync(p => p.Id == id);
+
             if (producto == null)
             {
                 return NotFound();
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "Id", "Id", producto.IdCategoria);
+
+            // Cargar las categorías y pasarlas a la vista
+            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "Id", "Nombre", producto.IdCategoria);
+
             return View(producto);
         }
+
+
 
         // POST: Productos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
