@@ -64,9 +64,9 @@ namespace WebFerreteria.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Producto producto)
+        public async Task<IActionResult> Create([Bind("Id,Codigo,Descripcion,Marca,UnidadMedida,PrecioVenta,Stock,IdCategoria")] Producto producto)
         {
-            if (ModelState.IsValid)
+            if (!string.IsNullOrEmpty(producto.Codigo) && !string.IsNullOrEmpty(producto.Marca) && !string.IsNullOrEmpty(producto.Descripcion))
             {
                 try
                 {
