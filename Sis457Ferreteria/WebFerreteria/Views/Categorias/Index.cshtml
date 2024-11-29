@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Categorías";
+
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -21,6 +22,7 @@
     </thead>
     <tbody>
         @foreach (var item in Model)
+
         {
             <tr>
                 <td>
@@ -34,8 +36,8 @@
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" title="Editar"><i class="fa fa-edit"></i></a> |
-                <a asp-action="Details" asp-route-id="@item.Id" title="Detalle"><i class="fa fa-list"></i></a> |
-                <a asp-action="Delete" asp-route-id="@item.Id" title="Eliminar"><i class="fa fa-trash"></i></a>
+                    <a asp-action="Details" asp-route-id="@item.Id" title="Detalle"><i class="fa fa-list"></i></a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" title="Eliminar"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
         }
