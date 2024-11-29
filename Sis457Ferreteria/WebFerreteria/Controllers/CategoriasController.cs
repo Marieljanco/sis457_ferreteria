@@ -137,6 +137,8 @@ namespace WebFerreteria.Controllers
             return View(categoria);
         }
 
+
+
         // POST: Categorias/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -145,12 +147,19 @@ namespace WebFerreteria.Controllers
             var categoria = await _context.Categoria.FindAsync(id);
             if (categoria != null)
             {
+                //categoria.Estado = -1;
+                //categoria.UsuarioRegistro = User.Identity.Name;
                 _context.Categoria.Remove(categoria);
+
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+        // POST: Clientes/Delete/5
+
 
         private bool CategoriaExists(int id)
         {

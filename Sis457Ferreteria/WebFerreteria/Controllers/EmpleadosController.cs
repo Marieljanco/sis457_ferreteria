@@ -158,9 +158,11 @@ namespace WebFerreteria.Controllers
             if (empleado != null)
             {
                 _context.Empleados.Remove(empleado);
-            }
 
+
+            }
             await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 

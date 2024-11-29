@@ -171,18 +171,23 @@
                     <a class="navbar-brand" href="index.html">
                         <img src="~/images/main-logo.png" class="logo img-fluid">
                     </a>
-                    <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
-                        <li class="phone text-black fw-medium text-capitalize d-flex align-items-center ms-4">
-                            <svg class="text-primary me-1" width="20" height="20">
-                                <use xlink:href="#phone"></use>
-                            </svg> Llamar: 666 333 9999
-                        </li>
-                        <li class="time text-black fw-medium text-capitalize d-flex align-items-center ms-4">
-                            <svg class="text-primary me-1" width="20" height="20">
-                                <use xlink:href="#clock"></use>
-                            </svg> 8:00-18:00, Sáb: Cerrado
-                        </li>
-                    </ul>
+
+                    @if (User.Identity.IsAuthenticated == true)
+                    {
+                        <ul class="info d-flex flex-wrap justify-content-end align-items-center list-unstyled m-0">
+                            <li class="phone text-black fw-medium text-capitalize d-flex align-items-center ms-4">
+                                <svg class="text-primary me-1" width="20" height="20">
+                                    <use xlink:href="#phone"></use>
+                                </svg> Llamar: 666 333 9999
+                            </li>
+                            <li class="time text-black fw-medium text-capitalize d-flex align-items-center ms-4">
+                                <svg class="text-primary me-1" width="20" height="20">
+                                    <use xlink:href="#clock"></use>
+                                </svg> 8:00-18:00, Sáb: Cerrado
+                            </li>
+                        </ul>
+                    }
+
                 </div>
             </div>
         </nav>
@@ -200,90 +205,121 @@
                         <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas"
                                 aria-label="Close" data-bs-target="#bdNavbar"></button>
                     </div>
-                    <div class="offcanvas-body align-items-center justify-content-center">
+                    <div class="offcanvas-body align-items-center justify-content-end">
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link me-4 active" asp-controller="Home" asp-action="Index">inicio</a>
-                            </li>
-                            <li class="nav-item px-3 py-1 py-lg-0 dropdown">
-                                <a class="nav-link p-0 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                   aria-expanded="false">
-                                    pages
-                                    <svg width="20" height="20" style="vertical-align: sub;">
-                                        <use xlink:href="#arrow-down"></use>
-                                    </svg>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                                    <li>
-                                        <a href="index.html" class="dropdown-item">About </a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html" class="dropdown-item">Blog </a>
-                                    <li><a href="index.html" class="dropdown-item">Services </a></li>
-                                    <li><a href="index.html" class="dropdown-item">Project </a></li>
-                                    <li><a href="index.html" class="dropdown-item">Reviews </a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" href="#about-us">Acerca de Nosotros</a>
-                            </li>
-                            @if (User.Identity.IsAuthenticated == false)
 
+                            @if (User.Identity.IsAuthenticated == true)
                             {
-                                <a asp-controller="Account" asp-action="Login" class="user-account for-buy">
-                                    <i class="fas fa-user"></i><span>Iniciar Sesión</span>
-                                </a>
-                                @* <a asp-controller="Account" asp-action="Login" class="nav-link me-4">
-                            <i class="fas fa-user"></i> <span>Iniciar Sesión</span>
-                            </a> *@
-                            }
-
-                            else
-
-                            {
-                                <li>
-                                    @await Html.PartialAsync("_LogoutPartial")
+                                <li class="nav-item">
+                                    <ul class="navbar-nav mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "Home" ? "active" : "")" asp-controller="Home" asp-action="Index">inicio</a>
+                                        </li>
+                                        <li class="nav-item px-3 py-1 py-lg-0 pt-5 dropdown">
+                                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                               aria-expanded="false">
+                                                pages
+                                                <svg width="20" height="20" style="vertical-align: sub;">
+                                                    <use xlink:href="#arrow-down"></use>
+                                                </svg>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
+                                                <li>
+                                                    <a href="index.html" class="dropdown-item">About </a>
+                                                </li>
+                                                <li>
+                                                    <a href="index.html" class="dropdown-item">Blog </a>
+                                                <li><a href="index.html" class="dropdown-item">Services </a></li>
+                                                <li><a href="index.html" class="dropdown-item">Project </a></li>
+                                                <li><a href="index.html" class="dropdown-item">Reviews </a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4" href="#about-us">Acerca de Nosotros</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             }
+
+
+
                             @if (User.Identity.IsAuthenticated == true)
 
                             {
+                                <li class="nav-item">
+                                    <ul class="navbar-nav mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "Clientes" ? "active" : "")" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "Categorias" ? "active" : "")" asp-controller="Categorias" asp-action="Index">Categorías</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "Productos" ? "active" : "")" asp-controller="Productos" asp-action="Index">Productos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "Empleados" ? "active" : "")" asp-controller="Empleados" asp-action="Index">Empleados</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "Ventas" ? "active" : "")" asp-controller="Ventas" asp-action="Index">Ventas</a>
+                                        </li>
+                                    </ul>
+                                </li>
 
-                                <li class="nav-item">
-                                    <a class="nav-link me-4" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                                <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 mx-0 dropdown">
+                                    <a class="nav-link search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                       aria-expanded="false">
+                                        <svg class="search" width="24" height="24">
+                                            <use xlink:href="#search"></use>
+                                        </svg>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 p-3 shadow">
+                                        <li class="position-relative d-flex align-items-center p-0">
+                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                            <button class="btn btn-primary position-absolute end-0" type="submit">
+                                                <svg class="search" width="24" height="24">
+                                                    <use xlink:href="#search"></use>
+                                                </svg>
+                                            </button>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link me-4" asp-controller="Categorias" asp-action="Index">Categorías</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link me-4" asp-controller="Productos" asp-action="Index">Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link me-4" asp-controller="Empleados" asp-action="Index">Empleados</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link me-4" asp-controller="Ventas" asp-action="Index">Ventas</a>
-                                </li>
-
                             }
-                            <li class="nav-item search-dropdown py-3 py-lg-0 ms-3 ms-lg-5 dropdown">
-                                <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                   aria-expanded="false">
-                                    <svg class="search" width="24" height="24">
-                                        <use xlink:href="#search"></use>
-                                    </svg>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 p-3 shadow">
-                                    <li class="position-relative d-flex align-items-center p-0">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-primary position-absolute end-0" type="submit">
-                                            <svg class="search" width="24" height="24">
-                                                <use xlink:href="#search"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </li>
+
+
+
+
+
+
+
+
+                            @* @if (User.Identity.IsAuthenticated == false) *@
+
+                            @* { *@
+
+                            @*     <li class="nav-item"> *@
+                            @*         <a class="nav-link me-4" asp-controller="Account" asp-action="Login"> *@
+                            @*             <i class="fas fa-user"></i><span> Iniciar Sesión</span> *@
+                            @*         </a> *@
+                            @*     </li> *@
+                            @* } *@
+
+                            @* else *@
+
+                            @* { *@
+                            @*     <li> *@
+                            @*          *@
+                            @*     </li> *@
+                            @* } *@
+
+
+                            @if (User.Identity.IsAuthenticated == true)
+                            {
+                                <li class="nav-item">
+                                    @await Html.PartialAsync("_LogoutPartial")
+
+                                </li>
+                            }
                         </ul>
                     </div>
                 </div>
@@ -300,230 +336,233 @@
     &copy; 2024 - WebFerreteria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
     </footer> *@
+    @if (User.Identity.IsAuthenticated == true)
+    {
+        <footer id="footer">
+            <div class="container padding-small">
+                <div class="row flex-wrap justify-content-between">
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="footer-menu">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="~/images/main-logo.png" class="logo img-fluid">
+                            </a>
+                            <ul class="menu-list d-flex flex-column list-unstyled mt-3">
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Inicio</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Sobre Nosotros</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Testimonios</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Blog</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Privacy Policy</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Our Services</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Contactos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="footer-menu">
+                            <h5 class=" widget-title py-2 mt-3 fw-semibold">Nuestros Servicios</h5>
+                            <ul class="menu-list d-flex flex-column list-unstyled">
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Instalación de fontanería </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Reparación de herramientas de construcción </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Mantenimiento de herramientas </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Equipos y herramientas para proyectos comerciales </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> calidad del aire en espacios cerrados (productos de ventilación) </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Industrial HVAC </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="footer-menu">
+                            <h5 class=" widget-title py-2 mt-3 fw-semibold">Otros Servicios</h5>
+                            <ul class="menu-list d-flex flex-column list-unstyled">
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Herramientas y equipos de construcción </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="20" height="20">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Suministros de plomería y electricidad </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Entrega a domicilio de productos</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> materiales de acabado (pinturas, cerámica, etc.) </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Servicio de corte de materiales </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="16" height="16">
+                                        <use xlink:href="#check-circle"></use>
+                                    </svg><a href="#"> Reparación y mantenimiento de herramientas </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pb-3">
+                        <div class="footer-menu">
+                            <h5 class=" widget-title py-2 mt-3 fw-semibold">Sobre Larana Ferretería</h5>
+                            <ul class="menu-list d-flex flex-column list-unstyled">
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="18" height="18">
+                                        <use xlink:href="#location"></use>
+                                    </svg><a href="#"> Sucre, Chuquisaca, Bolivia</a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="18" height="18">
+                                        <use xlink:href="#email"></use>
+                                    </svg><a href="#"> info@laranaferreteria.com </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="18" height="18">
+                                        <use xlink:href="#phone"></use>
+                                    </svg><a href="#"> 888 333 9999 </a>
+                                </li>
+                                <li class="fw-medium text-capitalize d-flex align-items-center">
+                                    <svg class="text-primary me-1" width="18" height="18">
+                                        <use xlink:href="#clock"></use>
+                                    </svg><a href="#"> 8:00-18:00, Sáb: Cerrado </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h5 class=" widget-title py-2 mt-4 fw-semibold">Opciones de pago</h5>
+                            <ul class="payment-links d-flex flex-wrap list-unstyled">
+                                <li class="payment me-3">
+                                    <a href="#">
+                                        <svg class=" me-1" width="26" height="26">
+                                            <use xlink:href="#visa"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="payment me-3">
+                                    <a href="#">
+                                        <svg class=" me-1" width="26" height="26">
+                                            <use xlink:href="#mastercard"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="payment me-3">
+                                    <a href="#">
+                                        <svg class=" me-1" width="26" height="26">
+                                            <use xlink:href="#paypal"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h5 class=" widget-title py-2 mt-4 fw-semibold">Enlace a redes sociales</h5>
+                            <ul class="social-links d-flex flex-wrap list-unstyled">
+                                <li class="social me-3">
+                                    <a href="#">
+                                        <svg class=" me-1" width="24" height="24">
+                                            <use xlink:href="#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social me-3">
+                                    <a href="#">
+                                        <svg class=" me-1" width="24" height="24">
+                                            <use xlink:href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social me-3">
+                                    <a href="#">
+                                        <svg class=" me-1" width="24" height="24">
+                                            <use xlink:href="#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social me-3">
+                                    <a href="#">
+                                        <svg class=" me-1" width="24" height="24">
+                                            <use xlink:href="#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="m-0">
+            <div class="container">
+                <div class="footer-bottom d-md-flex justify-content-between py-4">
+                    <p class=" mb-0">© 2024 LARANA - All rights reserved</p>
+                    <p class=" mb-0">
+                        HTML Templates by:
+                        <a href="https://templatesjungle.com/" target="_blank"
+                           class="text-decoration-underline fw-semibold "> TemplatesJungle</a>
+                        Distributed by: <a href="https://themewagon.com" target="blank"
+                                           class="text-decoration-underline fw-semibold">ThemeWagon</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    }
 
-    <footer id="footer">
-        <div class="container padding-small">
-            <div class="row flex-wrap justify-content-between">
-                <div class="col-lg-3 col-md-6 pb-3">
-                    <div class="footer-menu">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="~/images/main-logo.png" class="logo img-fluid">
-                        </a>
-                        <ul class="menu-list d-flex flex-column list-unstyled mt-3">
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Inicio</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Sobre Nosotros</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Testimonios</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Blog</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Privacy Policy</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Our Services</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Contactos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 pb-3">
-                    <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Nuestros Servicios</h5>
-                        <ul class="menu-list d-flex flex-column list-unstyled">
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Instalación de fontanería </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Reparación de herramientas de construcción </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Mantenimiento de herramientas </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Equipos y herramientas para proyectos comerciales </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> calidad del aire en espacios cerrados (productos de ventilación) </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Industrial HVAC </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 pb-3">
-                    <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Otros Servicios</h5>
-                        <ul class="menu-list d-flex flex-column list-unstyled">
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Herramientas y equipos de construcción </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="20" height="20">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Suministros de plomería y electricidad </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Entrega a domicilio de productos</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> materiales de acabado (pinturas, cerámica, etc.) </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Servicio de corte de materiales </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="16" height="16">
-                                    <use xlink:href="#check-circle"></use>
-                                </svg><a href="#"> Reparación y mantenimiento de herramientas </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 pb-3">
-                    <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-3 fw-semibold">Sobre Larana Ferretería</h5>
-                        <ul class="menu-list d-flex flex-column list-unstyled">
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="18" height="18">
-                                    <use xlink:href="#location"></use>
-                                </svg><a href="#"> Sucre, Chuquisaca, Bolivia</a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="18" height="18">
-                                    <use xlink:href="#email"></use>
-                                </svg><a href="#"> info@laranaferreteria.com </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="18" height="18">
-                                    <use xlink:href="#phone"></use>
-                                </svg><a href="#"> 888 333 9999 </a>
-                            </li>
-                            <li class="fw-medium text-capitalize d-flex align-items-center">
-                                <svg class="text-primary me-1" width="18" height="18">
-                                    <use xlink:href="#clock"></use>
-                                </svg><a href="#"> 8:00-18:00, Sáb: Cerrado </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-4 fw-semibold">Opciones de pago</h5>
-                        <ul class="payment-links d-flex flex-wrap list-unstyled">
-                            <li class="payment me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="26" height="26">
-                                        <use xlink:href="#visa"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="payment me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="26" height="26">
-                                        <use xlink:href="#mastercard"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="payment me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="26" height="26">
-                                        <use xlink:href="#paypal"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu">
-                        <h5 class=" widget-title py-2 mt-4 fw-semibold">Enlace a redes sociales</h5>
-                        <ul class="social-links d-flex flex-wrap list-unstyled">
-                            <li class="social me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="24" height="24">
-                                        <use xlink:href="#facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="24" height="24">
-                                        <use xlink:href="#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="24" height="24">
-                                        <use xlink:href="#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social me-3">
-                                <a href="#">
-                                    <svg class=" me-1" width="24" height="24">
-                                        <use xlink:href="#youtube"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr class="m-0">
-        <div class="container">
-            <div class="footer-bottom d-md-flex justify-content-between py-4">
-                <p class=" mb-0">© 2024 LARANA - All rights reserved</p>
-                <p class=" mb-0">
-                    HTML Templates by:
-                    <a href="https://templatesjungle.com/" target="_blank"
-                       class="text-decoration-underline fw-semibold "> TemplatesJungle</a>
-                    Distributed by: <a href="https://themewagon.com" target="blank"
-                                       class="text-decoration-underline fw-semibold">ThemeWagon</a>
-                </p>
-            </div>
-        </div>
-    </footer>
 
     @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> *@

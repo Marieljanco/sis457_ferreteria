@@ -58,14 +58,21 @@ namespace WebFerreteria.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IdUsuario,IdCliente,Total,MontoPago,MontoCambio,Fecha,UsuarioRegistro,FechaRegistro,Estado")] Venta venta)
+        public async Task<IActionResult> Create([Bind("Id,IdUsuario,IdCliente,Total,MontoPago,MontoCambio")] Venta venta)
         {
-            if (ModelState.IsValid)
+
+            if (venta.MontoPago > 0 && venta.Total > 0 && venta.MontoCambio >= 0)
             {
+                venta.UsuarioRegistro = User.Identity.Name;
+                venta.FechaRegistro = DateTime.Now;
+                venta.Estado = 1;
                 _context.Add(venta);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+
+
             ViewData["IdCliente"] = new SelectList(_context.Clientes, "Id", "Id", venta.IdCliente);
             ViewData["IdUsuario"] = new SelectList(_context.Usuarios, "Id", "Id", venta.IdUsuario);
             return View(venta);
@@ -101,7 +108,7 @@ namespace WebFerreteria.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (venta.Total >= 0 && venta.MontoPago >= 0 && venta.MontoCambio >= 0)
             {
                 try
                 {

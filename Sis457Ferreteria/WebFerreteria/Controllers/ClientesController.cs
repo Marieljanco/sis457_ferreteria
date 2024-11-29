@@ -145,12 +145,12 @@ namespace WebFerreteria.Controllers
             var cliente = await _context.Clientes.FindAsync(id);
             if (cliente != null)
             {
-                cliente.Estado = -1;
-                cliente.UsuarioRegistro = User.Identity.Name;
-                await _context.SaveChangesAsync();
-                //_context.Clientes.Remove(cliente);
-            }
+                //cliente.Estado = -1;
+                //cliente.UsuarioRegistro = User.Identity.Name;
 
+                _context.Clientes.Remove(cliente);
+            }
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

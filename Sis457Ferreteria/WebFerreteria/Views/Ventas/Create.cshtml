@@ -5,43 +5,64 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Crear Venta</h1>
+<h2 class="text-center">Crear Venta</h2>
 
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label class="control-label">IdUsuario</label>
-                <select asp-for="IdUsuario" class ="form-control" asp-items="ViewBag.IdUsuario"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdCliente" class="control-label"></label>
-                <select asp-for="IdCliente" class ="form-control" asp-items="ViewBag.IdCliente"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Total" class="control-label"></label>
-                <input asp-for="Total" class="form-control" />
-                <span asp-validation-for="Total" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MontoPago" class="control-label"></label>
-                <input asp-for="MontoPago" class="form-control" />
-                <span asp-validation-for="MontoPago" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="MontoCambio" class="control-label"></label>
-                <input asp-for="MontoCambio" class="form-control" />
-                <span asp-validation-for="MontoCambio" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="container">
+    <div class="row d-flex align-items-center justify-content-center flex-column">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">IdUsuario</label>
+                    <select asp-for="IdUsuario" class="form-control" asp-items="ViewBag.IdUsuario"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="IdCliente" class="control-label"></label>
+                    <select asp-for="IdCliente" class="form-control" asp-items="ViewBag.IdCliente"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Total" class="control-label"></label>
+                    <input asp-for="Total" class="form-control" type="number" step="0.01" id="Total" oninput="calcularCambio()" />
+                    <span asp-validation-for="Total" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="MontoPago" class="control-label"></label>
+                    <input asp-for="MontoPago" class="form-control" type="number" step="0.01" id="MontoPago" oninput="calcularCambio()" />
+                    <span asp-validation-for="MontoPago" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="MontoCambio" class="control-label"></label>
+                    <input asp-for="MontoCambio" class="form-control" type="number" step="0.01" id="MontoCambio" readonly />
+                    <span asp-validation-for="MontoCambio" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Crear" class="btn btn-primary" style="width:100%" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <a asp-action="Index">Volver a la lista</a>
+        </div>
     </div>
+
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<script>
+    function calcularCambio() {
+        // Obtener valores de Total y MontoPago
+        const total = parseFloat(document.getElementById('Total').value) || 0;
+        const montoPago = parseFloat(document.getElementById('MontoPago').value) || 0;
+
+        // Calcular MontoCambio
+        const montoCambio = montoPago > total ? (montoPago - total).toFixed(2) : 0;
+
+        // Asignar el valor al campo MontoCambio
+        document.getElementById('MontoCambio').value = montoCambio;
+    }
+
+
+</script>

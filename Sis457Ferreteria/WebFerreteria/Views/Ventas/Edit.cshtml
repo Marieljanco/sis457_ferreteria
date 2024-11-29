@@ -26,39 +26,46 @@
             </div>
             <div class="form-group">
                 <label asp-for="Total" class="control-label"></label>
-                <input asp-for="Total" class="form-control" />
+                <input asp-for="Total" class="form-control" type="number" id="Total" oninput="calcularCambio()" />
                 <span asp-validation-for="Total" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="MontoPago" class="control-label"></label>
-                <input asp-for="MontoPago" class="form-control" />
+                <input asp-for="MontoPago" class="form-control" type="number" id="MontoPago" oninput="calcularCambio()" />
                 <span asp-validation-for="MontoPago" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="MontoCambio" class="control-label"></label>
-                <input asp-for="MontoCambio" class="form-control" />
+                <input asp-for="MontoCambio" class="form-control" type="number" id="MontoCambio" readonly/>
                 <span asp-validation-for="MontoCambio" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Fecha" class="control-label"></label>
-                <input asp-for="Fecha" class="form-control" />
+                <input asp-for="Fecha" class="form-control" type="date"/>
                 <span asp-validation-for="Fecha" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="UsuarioRegistro" class="control-label"></label>
-                <input asp-for="UsuarioRegistro" class="form-control" />
+                <input asp-for="UsuarioRegistro" class="form-control" readonly />
                 <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaRegistro" class="control-label"></label>
-                <input asp-for="FechaRegistro" class="form-control" />
+                <input asp-for="FechaRegistro" class="form-control" type="datetime-local"/>
                 <span asp-validation-for="FechaRegistro" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Estado" class="control-label"></label>
                 <input asp-for="Estado" class="form-control" />
                 <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
+            </div
+
+
+            @* esto tomar en cuenta *@
+            <input type="hidden" asp-for="UsuarioRegistro"/>
+            <input type="hidden" asp-for="FechaRegistro" />
+               
+            <input type="hidden" asp-for="Estado" />
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
@@ -69,7 +76,19 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+<script>
+    function calcularCambio() {
+        // Obtener valores de Total y MontoPago
+        const total = parseFloat(document.getElementById('Total').value) || 0;
+        const montoPago = parseFloat(document.getElementById('MontoPago').value) || 0;
 
+        // Calcular MontoCambio
+        const montoCambio = montoPago > total ? (montoPago - total).toFixed(2) : 0;
+
+        // Asignar el valor al campo MontoCambio
+        document.getElementById('MontoCambio').value = montoCambio;
+    }
+</script>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
