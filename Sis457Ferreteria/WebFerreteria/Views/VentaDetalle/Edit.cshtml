@@ -17,65 +17,52 @@
 
             <!-- ID Venta Dropdown -->
             <div class="form-group">
-                <label asp-for="IdVenta" class="control-label"></label>
+                <label class="control-label">Id Venta" </label>
                 <select asp-for="IdVenta" class="form-control" asp-items="ViewBag.IdVenta"></select>
                 <span asp-validation-for="IdVenta" class="text-danger"></span>
             </div>
 
             <!-- ID Producto Dropdown -->
             <div class="form-group">
-                <label asp-for="IdProducto" class="control-label"></label>
+                <label class="control-label">Id Producto</label>
                 <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto" onchange="onProductChange()"></select>
                 <span asp-validation-for="IdProducto" class="text-danger"></span>
             </div>
 
             <!-- Nombre del Producto -->
             <div class="form-group">
-                <label asp-for="NombreProducto" class="control-label"></label>
+                <label class="control-label">Nombre Producto</label>
                 <input asp-for="NombreProducto" class="form-control" readonly />
                 <span asp-validation-for="NombreProducto" class="text-danger"></span>
             </div>
 
             <!-- Precio Unitario -->
             <div class="form-group">
-                <label asp-for="PrecioUnitario" class="control-label"></label>
+                <label class="control-label">Precio Unitario</label>
                 <input asp-for="PrecioUnitario" class="form-control" readonly />
                 <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
             </div>
 
             <!-- Cantidad -->
             <div class="form-group">
-                <label asp-for="Cantidad" class="control-label"></label>
+                <label class="control-label">Cantidad</label>
                 <input asp-for="Cantidad" class="form-control" oninput="calculateSubtotal()" />
                 <span asp-validation-for="Cantidad" class="text-danger"></span>
             </div>
 
             <!-- Subtotal -->
             <div class="form-group">
-                <label asp-for="Subtotal" class="control-label"></label>
+                <label class="control-label">Subtotal</label>
                 <input asp-for="Subtotal" class="form-control" readonly />
                 <span asp-validation-for="Subtotal" class="text-danger"></span>
             </div>
 
-            <!-- Otros campos -->
-            <div class="form-group">
-                <label asp-for="UsuarioRegistro" class="control-label"></label>
-                <input asp-for="UsuarioRegistro" class="form-control" readonly />
-                <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FechaRegistro" class="control-label"></label>
-                <input asp-for="FechaRegistro" class="form-control" readonly />
-                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" readonly />
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
+            <input type="hidden" asp-for="UsuarioRegistro" />
+            <input type="hidden" asp-for="FechaRegistro" />
+            <input type="hidden" asp-for="Estado" />
 
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Guardar</button>
             </div>
         </form>
     </div>

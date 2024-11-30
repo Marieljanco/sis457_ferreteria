@@ -8,38 +8,20 @@
 <h1>Venta Detalle</h1>
 
 <p>
-    <a asp-action="Create">Crear Nuevo Venta Detalle</a>
+    @* <a asp-action="Create">Crear Nuevo Venta Detalle</a> *@
+    <a asp-action="Create"><i class="fa fa-plus"></i> Crear Nuevo Venta Detalle</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
-                Nombre Producto
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PrecioUnitario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cantidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Subtotal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UsuarioRegistro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdProductoNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdVentaNavigation)
-            </th>
+            <th>Nombre Producto</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th>Usuario Registro</th>
+            <th>Fecha Registro</th>
+            <th>Producto Navigation</th>
+            <th>Id Venta </th>
             <th></th>
         </tr>
     </thead>
@@ -68,10 +50,7 @@
                         @Html.DisplayFor(modelItem => item.FechaRegistro)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Estado)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.IdProductoNavigation.Id)
+                        @Html.DisplayFor(modelItem => item.IdProductoNavigation.Descripcion)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.IdVentaNavigation.Id)

@@ -9,60 +9,37 @@
 
 <h3>Estas seguro de querer eliminar esto?</h3>
 <div>
-    <h4>Venta Detalle</h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NombreProducto)
-        </dt>
+        <dt class="col-sm-2">Nombre Producto</dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.NombreProducto)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.PrecioUnitario)
-        </dt>
+        <dt class="col-sm-2">PrecioUnitario</dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PrecioUnitario)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Cantidad)
-        </dt>
+        <dt class="col-sm-2">Cantidad</dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Cantidad)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Subtotal)
-        </dt>
+        <dt class="col-sm-2">Subtotal</dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Subtotal)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.UsuarioRegistro)
-        </dt>
+        <dt class="col-sm-2">UsuarioRegistro</dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.UsuarioRegistro)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaRegistro)
-        </dt>
+        <dt class="col-sm-2">FechaRegistro</dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.FechaRegistro)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Estado)
-        </dt>
+        <dt class="col-sm-2">Id Producto</dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Estado)
+            @Html.DisplayFor(model => model.IdProductoNavigation.Descripcion)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IdProductoNavigation)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.IdProductoNavigation.Id)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IdVentaNavigation)
-        </dt>
+        <dt class="col-sm-2">Id Venta</dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.IdVentaNavigation.Id)
         </dd>

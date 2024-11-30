@@ -14,11 +14,11 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="IdVenta" class="control-label"></label>
+                <label class="control-label">Id Venta</label>
                 <select asp-for="IdVenta" class="form-control" asp-items="ViewBag.IdVenta"></select>
             </div>
             <div class="form-group">
-                <label asp-for="IdProducto" class="control-label"></label>
+                <label class="control-label">IdProducto</label>
                 <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto" id="IdProducto"></select>
             </div>
 
@@ -29,23 +29,23 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="PrecioUnitario" class="control-label"></label>
+                <label class="control-label">Precio Unitario </label>
                 <input asp-for="PrecioUnitario" class="form-control" id="PrecioUnitario" oninput="calcularSubtotal()" readonly />
                 <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="Cantidad" class="control-label"></label>
+                <label class="control-label">Cantidad</label>
                 <input asp-for="Cantidad" class="form-control" id="Cantidad" oninput="calcularSubtotal()" />
                 <span asp-validation-for="Cantidad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Subtotal" class="control-label"></label>
+                <label class="control-label">Subtotal</label>
                 <input asp-for="Subtotal" class="form-control" id="Subtotal" readonly />
                 <span asp-validation-for="Subtotal" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Crear</button>
             </div>
         </form>
     </div>

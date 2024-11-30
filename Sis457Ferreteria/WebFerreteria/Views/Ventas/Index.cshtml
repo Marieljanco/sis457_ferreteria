@@ -13,33 +13,14 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Total)
-            </th>
-            <th>
-                Monto Pago
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MontoCambio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fecha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UsuarioRegistro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaRegistro)
-            </th>
-            @* <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th> *@
-            <th>
-                @Html.DisplayNameFor(model => model.IdClienteNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdUsuarioNavigation)
-            </th>
+            <th>Total</th>
+            <th>Monto Pago</th>
+            <th>Monto Cambio</th>
+            <th>Fecha</th>
+            <th>Usuario Registro</th>
+            <th>Fecha Registro</th>
+            <th>Cliente</th>
+            <th>Usuario</th>
             <th></th>
         </tr>
     </thead>
@@ -65,14 +46,11 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.FechaRegistro)
                 </td>
-                @* <td>
-                    @Html.DisplayFor(modelItem => item.Estado)
-                </td> *@
                 <td>
-                    @Html.DisplayFor(modelItem => item.IdClienteNavigation.Id)
+                    @Html.DisplayFor(modelItem => item.IdClienteNavigation.Nombres)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.Id)
+                    @Html.DisplayFor(modelItem => item.IdUsuarioNavigation.Usuario1)
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" title="Editar"><i class="fa fa-edit"></i></a> |

@@ -32,10 +32,11 @@
             <div class="form-group">
                 <label class="control-label">Unidad de Medida</label>
                 <select asp-for="UnidadMedida" class="form-select">
-                    <option>Caja</option>
-                    <option>Docena</option>
-                    <option>Paquete</option>
                     <option>Unidad</option>
+                    <option>Metro</option>
+                    <option>Paquete</option>
+                    <option>Centímetro</option>
+                    <option>Kilógramo</option>
                 </select>
                 <span asp-validation-for="UnidadMedida" class="text-danger"></span>
             </div>
@@ -80,4 +81,3 @@
 <div>
     <a asp-action="Index"><i class="fa fa-arrow-left"></i> Volver a la lista</a>
 </div>
-
