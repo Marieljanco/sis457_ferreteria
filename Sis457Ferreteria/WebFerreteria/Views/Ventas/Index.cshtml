@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<WebFerreteria.Models.Venta>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Ventas";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -17,7 +17,7 @@
                 @Html.DisplayNameFor(model => model.Total)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MontoPago)
+                Monto Pago
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.MontoCambio)
@@ -31,9 +31,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.FechaRegistro)
             </th>
-            <th>
+            @* <th>
                 @Html.DisplayNameFor(model => model.Estado)
-            </th>
+            </th> *@
             <th>
                 @Html.DisplayNameFor(model => model.IdClienteNavigation)
             </th>
@@ -65,9 +65,9 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.FechaRegistro)
                 </td>
-                <td>
+                @* <td>
                     @Html.DisplayFor(modelItem => item.Estado)
-                </td>
+                </td> *@
                 <td>
                     @Html.DisplayFor(modelItem => item.IdClienteNavigation.Id)
                 </td>

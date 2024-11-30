@@ -1,0 +1,126 @@
+﻿@model WebFerreteria.Models.VentaDetalle
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>VentaDetalle</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <!-- ID Venta Dropdown -->
+            <div class="form-group">
+                <label asp-for="IdVenta" class="control-label"></label>
+                <select asp-for="IdVenta" class="form-control" asp-items="ViewBag.IdVenta"></select>
+                <span asp-validation-for="IdVenta" class="text-danger"></span>
+            </div>
+
+            <!-- ID Producto Dropdown -->
+            <div class="form-group">
+                <label asp-for="IdProducto" class="control-label"></label>
+                <select asp-for="IdProducto" class="form-control" asp-items="ViewBag.IdProducto" onchange="onProductChange()"></select>
+                <span asp-validation-for="IdProducto" class="text-danger"></span>
+            </div>
+
+            <!-- Nombre del Producto -->
+            <div class="form-group">
+                <label asp-for="NombreProducto" class="control-label"></label>
+                <input asp-for="NombreProducto" class="form-control" readonly />
+                <span asp-validation-for="NombreProducto" class="text-danger"></span>
+            </div>
+
+            <!-- Precio Unitario -->
+            <div class="form-group">
+                <label asp-for="PrecioUnitario" class="control-label"></label>
+                <input asp-for="PrecioUnitario" class="form-control" readonly />
+                <span asp-validation-for="PrecioUnitario" class="text-danger"></span>
+            </div>
+
+            <!-- Cantidad -->
+            <div class="form-group">
+                <label asp-for="Cantidad" class="control-label"></label>
+                <input asp-for="Cantidad" class="form-control" oninput="calculateSubtotal()" />
+                <span asp-validation-for="Cantidad" class="text-danger"></span>
+            </div>
+
+            <!-- Subtotal -->
+            <div class="form-group">
+                <label asp-for="Subtotal" class="control-label"></label>
+                <input asp-for="Subtotal" class="form-control" readonly />
+                <span asp-validation-for="Subtotal" class="text-danger"></span>
+            </div>
+
+            <!-- Otros campos -->
+            <div class="form-group">
+                <label asp-for="UsuarioRegistro" class="control-label"></label>
+                <input asp-for="UsuarioRegistro" class="form-control" readonly />
+                <span asp-validation-for="UsuarioRegistro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaRegistro" class="control-label"></label>
+                <input asp-for="FechaRegistro" class="form-control" readonly />
+                <span asp-validation-for="FechaRegistro" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" readonly />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index"><i class="fa fa-arrow-left"></i> Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Llamada AJAX para obtener el precio y el nombre del producto
+        function onProductChange() {
+            var productId = $('#IdProducto').val(); // Obtener el ID del producto seleccionado
+            if (productId) {
+                // Usamos fetch para obtener el precio y nombre del producto
+                fetch(`/VentaDetalle/GetPrecioProducto?idProducto=${productId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.precioProducto && data.nombreProducto) {
+                            // Actualizar los campos del nombre y precio
+                            $('#PrecioUnitario').val(data.precioProducto);
+                            $('#NombreProducto').val(data.nombreProducto); // Asegurarse de que el nombre del producto se actualice
+                            var cantidad = $('#Cantidad').val();
+                            calculateSubtotal(); // Recalcular el subtotal si la cantidad ya está disponible
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener el precio y nombre del producto:', error);
+                    });
+            }
+        }
+
+        // Calcular el subtotal cuando se cambia la cantidad
+        function calculateSubtotal() {
+            var precioUnitario = parseFloat($('#PrecioUnitario').val());
+            var cantidad = parseInt($('#Cantidad').val());
+            if (!isNaN(precioUnitario) && !isNaN(cantidad)) {
+                var subtotal = precioUnitario * cantidad;
+                $('#Subtotal').val(subtotal);
+            }
+        }
+    </script>
+
+}

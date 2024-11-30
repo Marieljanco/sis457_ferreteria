@@ -234,9 +234,9 @@
                                                 <li><a href="index.html" class="dropdown-item">Reviews </a></li>
                                             </ul>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link me-4" href="#about-us">Acerca de Nosotros</a>
-                                        </li>
+                                        @* <li class="nav-item"> *@
+                                        @*     <a class="nav-link me-4" href="#about-us">Acerca de Nosotros</a> *@
+                                        @* </li> *@
                                     </ul>
                                 </li>
                             }
@@ -262,6 +262,9 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "Ventas" ? "active" : "")" asp-controller="Ventas" asp-action="Index">Ventas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link me-4 @((ViewContext.RouteData.Values["controller"] as string) == "VentaDetalle" ? "active" : "")" asp-controller="VentaDetalle" asp-action="Index">Venta Detalle</a>
                                         </li>
                                     </ul>
                                 </li>
